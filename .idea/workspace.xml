@@ -7,14 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8d7aea7-f8ff-43a8-83de-aa37814101df" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/GeneratePairs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/recommender/recommenderUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PSRS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PSRS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recommender/recommenderAbstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/recommender/recommenderAbstract.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IncrementalCosineSim.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IncrementalCosineSim.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+            <state relative-caret-position="346">
+              <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -43,7 +37,7 @@
       <file leaf-file-name="recommenderAbstract.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/recommender/recommenderAbstract.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
+            <state relative-caret-position="341">
               <caret line="31" column="92" selection-start-line="31" selection-start-column="92" selection-end-line="31" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -52,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IncNeighbrCFRec.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="IncNeighbrCFRec.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="184" selection-start-line="184" selection-end-line="184" />
+            <state relative-caret-position="321">
+              <caret line="75" column="40" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,10 +91,10 @@
         <option value="$PROJECT_DIR$/src/main/java/recommender/recommenderAbstract.java" />
         <option value="$PROJECT_DIR$/src/main/java/PSRS.java" />
         <option value="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/GeneratePairs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java" />
         <option value="$PROJECT_DIR$/src/main/java/recommender/recommenderUtilities.java" />
         <option value="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalUserCosineSim.java" />
         <option value="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java" />
+        <option value="$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java" />
       </list>
     </option>
   </component>
@@ -272,10 +266,10 @@
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32969698" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32969698" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24034335" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24034335" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
@@ -343,16 +337,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/recommenderAbstract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="92" selection-start-line="31" selection-start-column="92" selection-end-line="31" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PSRS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -377,10 +361,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/recommenderAbstract.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="184" selection-start-line="184" selection-end-line="184" />
+        <state relative-caret-position="341">
+          <caret line="31" column="92" selection-start-line="31" selection-start-column="92" selection-end-line="31" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -389,10 +373,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+        <state relative-caret-position="346">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="75" column="40" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
+          <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>

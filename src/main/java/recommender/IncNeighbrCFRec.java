@@ -71,10 +71,11 @@ public class IncNeighbrCFRec extends recommenderAbstract {
                         String item = input.f2;
                         Float rate = input.f3;
 
-                        //step1: Get top k similar users
+                        //step1: Get top k similar users to the current users
 
-
-
+                        //generate pairs
+                        //prepare Map<user,sim>
+                        //method to get top k users
 
 
 
@@ -125,7 +126,13 @@ public class IncNeighbrCFRec extends recommenderAbstract {
 
                                     //step2:5 update sim state itself
                                     userSimilarities.put(userPair,commonCount1Count2);
+
+
+                                    //userSimilarities
+                                    Float cosSim =new IncrementalCosineSim().calculatecosineSimilarity(commonCount1Count2.f0,commonCount1Count2.f1,commonCount1Count2.f2);
+                                    commonCount1Count2.setField(cosSim,3);
                                 }
+
                             }
 
                             //******************************************************************************************************
@@ -141,6 +148,8 @@ public class IncNeighbrCFRec extends recommenderAbstract {
                                 allItems.put(item,None);
                             }
                             //******************************************************************************************************
+
+
                         }
                         //user is not known
                         else{
@@ -176,15 +185,14 @@ public class IncNeighbrCFRec extends recommenderAbstract {
                                 }
 
                                 commonCount1Count2.setField(otherUserItemsCount, positionOfTheOtherUser);
+
+                                //userSimilarities
+                                Float cosSim =new IncrementalCosineSim().calculatecosineSimilarity(commonCount1Count2.f0,commonCount1Count2.f1,commonCount1Count2.f2);
+                                commonCount1Count2.setField(cosSim,3);
                             }
 
 
                             //********************** Step3: Update other states  **************************************************
-                            //userSimilarities
-
-
-
-
 
                             // userItemRatingHistory
                             Map<String,Float> toUpdateItems = new HashMap<>();
