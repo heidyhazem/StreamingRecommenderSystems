@@ -42,6 +42,9 @@ public class PSRS {
         DataStream<Tuple4<Integer,String,String,Float>> withKeyedStream = new Batch(inputStream).generateOneKey(inputStream);
 
 
+        //*************************************** Recommendation part******************************************************************
+
+
 
         //***************************************writing the output (sink)******************************************************************
         if(params.has("output")){

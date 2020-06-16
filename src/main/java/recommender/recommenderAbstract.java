@@ -1,6 +1,7 @@
 package recommender;
 
 
+import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.api.java.tuple.Tuple4;
 import org.apache.flink.streaming.api.datastream.DataStream;
 
@@ -18,7 +19,7 @@ public abstract class recommenderAbstract {
      * @param withKeyStream The input data stream Keyed for partitioning(key,user,item,rate)
      * @return Map of predicted rates for the items  user has not rated
      */
-    public abstract Map<String,Float> fit(DataStream<Tuple4<Integer,String,String,Float>> withKeyStream);
+    public abstract DataStream<Tuple2<String,Map<String,Float>>> fit(DataStream<Tuple4<Integer,String,String,Float>> withKeyStream);
 
 
 
@@ -28,7 +29,7 @@ public abstract class recommenderAbstract {
      * @param estimatedRatesOfItems The predicted rates for the items  user has not rated
      * @return ArrayList of the recommended items
      */
-    public abstract ArrayList<String> recommend(Map<String,Float> estimatedRatesOfItems);
+    public abstract ArrayList<String> recommend(DataStream<Tuple2<String,Map<String,Float>>> estimatedRatesOfItems);
 
 
 
