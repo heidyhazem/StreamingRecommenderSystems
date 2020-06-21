@@ -23,9 +23,9 @@ public class IncrementalCosineSim {
      * @param commonCount is the count of common items rated by both of users
      * @param count1 is the count of items rated by the first user
      * @param count2 is the count of items rated by the second user
-     * @return
+     * @return the cosine similarity between two users
      */
-    Float CalculatecosineSimilarity (Integer commonCount, Integer count1, Integer count2){
+    public Float calculatecosineSimilarity (Integer commonCount, Integer count1, Integer count2){
         int similarity = commonCount/(count1*count2);
         return Float.valueOf(similarity);
     }

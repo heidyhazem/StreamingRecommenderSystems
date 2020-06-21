@@ -11,14 +11,12 @@ import org.apache.flink.api.java.tuple.Tuple4;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.functions.KeyedProcessFunction;
-import org.apache.flink.table.expressions.In;
 import org.apache.flink.util.Collector;
 
 import incrementalNeighbourhood.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import static sun.java2d.xr.XRUtils.None;
@@ -27,7 +25,7 @@ import static sun.java2d.xr.XRUtils.None;
 /**
  represents collaborative filtering recommender based on user's Neighbourhood with binary rating
  */
-public class IncNeighbrCFRec extends recommenderAbstract {
+public class IncNeighbrCFRec extends RecommenderAbstract {
 
     private DataStream<Tuple4<Integer, String, String, Float>> withKeyStream;
 
@@ -42,11 +40,11 @@ public class IncNeighbrCFRec extends recommenderAbstract {
 
 
     @Override
-    public DataStream<Tuple2<String, Map<String, Float>>> fit(DataStream<Tuple4<Integer, String, String, Float>> withKeyStream) {
+    public DataStream<Tuple3<Integer,String, Map<String, Float>>> fit(DataStream<Tuple4<Integer, String, String, Float>> withKeyStream, Integer k) {
 
 
-        DataStream<Tuple2<String, Map<String, Float>>> estimatedRateUserItemMap = withKeyStream.keyBy(0)
-                .process(new KeyedProcessFunction<Tuple, Tuple4<Integer, String, String, Float>, Tuple2<String, Map<String, Float>>>() {
+        DataStream<Tuple3<Integer,String, Map<String, Float>>> estimatedRateUserItemMap = withKeyStream.keyBy(0)
+                .process(new KeyedProcessFunction<Tuple, Tuple4<Integer, String, String, Float>, Tuple3<Integer,String, Map<String, Float>>>() {
 
 
 
@@ -65,26 +63,54 @@ public class IncNeighbrCFRec extends recommenderAbstract {
                     MapState<String,Integer> allItems;
 
                     @Override
-                    public void processElement(Tuple4<Integer, String, String, Float> input, Context context, Collector<Tuple2<String, Map<String, Float>>> out) throws Exception {
+                    public void processElement(Tuple4<Integer, String, String, Float> input, Context context, Collector<Tuple3<Integer,String, Map<String, Float>>> out) throws Exception {
 
                         String user =  input.f1;
                         String item = input.f2;
                         Float rate = input.f3;
 
-                        //step1: Get top k similar users
+                        //step1: Get top k similar users to the current users
+
+                        if (userItemRatingHistory.contains(user)){
+                            //prepare Map<user,sim>
+                            Map<String,Float> currentUserSimilaritiesMap = new HashMap<>();
 
 
+                            //###################### get top k similar user#######################################################
+
+                            //generate pairs
+                            for (String userInHistory : userItemRatingHistory.keys()){
+                                //get the ordered pairOf users(key)
+                                Tuple3<String,String,Integer>  keyWithPosition = new GeneratePairs().getKey(user,userInHistory);
+                                Tuple2<String,String> userPair = Tuple2.of(keyWithPosition.f0,keyWithPosition.f1);
+                                Integer positionOfCurrentUserInTheTuple = keyWithPosition.f2;
+
+                                try{
+
+                                    Float sim = userSimilarities.get(userPair).f3;
+                                    currentUserSimilaritiesMap.put(userInHistory,sim);
+
+                                }
+                                catch (Exception e){
+                                    System.out.println("The pairs is not exist");
+                                }
+                            }
+
+                            //method to get top k users
+                            ArrayList<Tuple2<String,Float>> topKSimilarUsers = new RecommenderUtilities().getMostKuSimilar(currentUserSimilaritiesMap, k);
+
+                            //step2: Estimate rate from user to all unrated items
 
 
+                            Map<String,Float> estimatedRatesForItems = new HashMap<>();
 
+                            estimatedRatesForItems = new RecommenderUtilities().estimateRateForItems(
+                                    allItems,topKSimilarUsers,userItemRatingHistory);
 
+                            //htl3 el map de ashan ytrtbo we ytl3 recommendation
+                            out.collect(Tuple3.of(input.f0,user,estimatedRatesForItems));
+                        }
 
-                        //step2: Estimate rate from user to all unrated items
-
-
-
-
-                        //TODO: Recommend state should be output before updating the state
                         //TODO: Refactor state (similarities can be eliminated)
 
                         //################################################################################################################################
@@ -125,7 +151,13 @@ public class IncNeighbrCFRec extends recommenderAbstract {
 
                                     //step2:5 update sim state itself
                                     userSimilarities.put(userPair,commonCount1Count2);
+
+
+                                    //userSimilarities
+                                    Float cosSim =new IncrementalCosineSim().calculatecosineSimilarity(commonCount1Count2.f0,commonCount1Count2.f1,commonCount1Count2.f2);
+                                    commonCount1Count2.setField(cosSim,3);
                                 }
+
                             }
 
                             //******************************************************************************************************
@@ -141,6 +173,8 @@ public class IncNeighbrCFRec extends recommenderAbstract {
                                 allItems.put(item,None);
                             }
                             //******************************************************************************************************
+
+
                         }
                         //user is not known
                         else{
@@ -176,15 +210,14 @@ public class IncNeighbrCFRec extends recommenderAbstract {
                                 }
 
                                 commonCount1Count2.setField(otherUserItemsCount, positionOfTheOtherUser);
+
+                                //userSimilarities
+                                Float cosSim =new IncrementalCosineSim().calculatecosineSimilarity(commonCount1Count2.f0,commonCount1Count2.f1,commonCount1Count2.f2);
+                                commonCount1Count2.setField(cosSim,3);
                             }
 
 
                             //********************** Step3: Update other states  **************************************************
-                            //userSimilarities
-
-
-
-
 
                             // userItemRatingHistory
                             Map<String,Float> toUpdateItems = new HashMap<>();
@@ -251,12 +284,26 @@ public class IncNeighbrCFRec extends recommenderAbstract {
                 });
 
 
-
         return estimatedRateUserItemMap;
     }
 
+
+
     @Override
-    public ArrayList<String> recommend(DataStream<Tuple2<String, Map<String, Float>>> estimatedRatesOfItems) {
-        return null;
+    public DataStream<ArrayList<String>> recommend(DataStream<Tuple3<Integer,String, Map<String, Float>>> estimatedRatesOfItems, Integer K) {
+
+
+        DataStream<ArrayList<String>> recommendedItems = estimatedRatesOfItems.keyBy(0)
+                .process(new KeyedProcessFunction<Tuple, Tuple3<Integer, String, Map<String, Float>>, ArrayList<String>>() {
+                    @Override
+                    public void processElement(Tuple3<Integer, String, Map<String, Float>> input, Context context, Collector<ArrayList<String>> out) throws Exception {
+
+                        ArrayList<String> recommendedItemsList = new RecommenderUtilities().topKItems(input.f2,K);
+
+                        out.collect(recommendedItemsList);
+                    }
+                });
+
+        return recommendedItems;
     }
 }
