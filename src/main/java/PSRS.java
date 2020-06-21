@@ -7,6 +7,9 @@ import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import readingSources.SourceWithTimestamp;
 import partitioning.*;
+import recommender.*;
+
+import java.util.Map;
 
 public class PSRS {
 
@@ -43,6 +46,11 @@ public class PSRS {
 
 
         //*************************************** Recommendation part******************************************************************
+
+        DataStream<Tuple3<Integer,String, Map<String, Float>>> estimatedRatesItems = new IncNeighbrCFRec().fit(
+                withKeyedStream,10);
+
+
 
 
 
