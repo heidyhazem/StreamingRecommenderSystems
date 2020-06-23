@@ -10,6 +10,12 @@ import java.util.Map;
 
 public class RecommenderUtilities {
 
+    /**
+     *
+     * @param toBeOrderedMap Map of string as key and float as score to be ordered and retrieve most top k
+     * @param k how many items/users to be retrieved as most similar
+     * @return top k similar users/items
+     */
 
     public ArrayList<Tuple2<String,Float>> getMostKuSimilar(Map<String,Float> toBeOrderedMap, Integer k){
 
@@ -24,6 +30,12 @@ public class RecommenderUtilities {
 
     }
 
+    /**
+     *
+     * @param toBeOrderedMap Map of items and estimated rates
+     * @param k howa many items to be recommended
+     * @return top similar items
+     */
     public ArrayList<String>topKItems(Map<String,Float> toBeOrderedMap, Integer k){
 
         ArrayList<String> topKSimilar = new ArrayList<>();
@@ -37,7 +49,14 @@ public class RecommenderUtilities {
 
     }
 
-
+    /**
+     *
+     * @param allItems all items
+     * @param topKSimilarthings top k similar items/users
+     * @param userItemRatingHistory Map of user and his/her rated itesm
+     * @return  Map of item and the corresponding estimated rate
+     * @throws Exception
+     */
     public Map<String,Float> estimateRateForItems (MapState<String,Integer> allItems,ArrayList<Tuple2<String,Float>> topKSimilarthings,
                                                    MapState<String,Map<String,Float>> userItemRatingHistory) throws Exception {
 

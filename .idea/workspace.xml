@@ -7,11 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8d7aea7-f8ff-43a8-83de-aa37814101df" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PSRS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PSRS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recommender/recommenderAbstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recommender/recommenderUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,7 +36,7 @@
       <file leaf-file-name="RecommenderAbstract.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
+            <state relative-caret-position="418">
               <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -52,7 +48,7 @@
       <file leaf-file-name="IncNeighbrCFRec.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
+            <state relative-caret-position="-2008">
               <caret line="45" column="75" lean-forward="true" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -63,10 +59,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PSRS.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PSRS.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/PSRS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="747">
               <caret line="52" selection-start-line="52" selection-end-line="52" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -75,20 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GeneratePairs.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/GeneratePairs.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecommenderUtilities.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RecommenderUtilities.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            <state relative-caret-position="438">
+              <caret line="56" column="64" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,13 +112,13 @@
         <option value="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java" />
         <option value="$PROJECT_DIR$/src/main/java/recommender/recommenderUtilities.java" />
         <option value="$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java" />
-        <option value="$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java" />
         <option value="$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java" />
         <option value="$PROJECT_DIR$/src/main/java/PSRS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -287,7 +274,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
@@ -300,10 +287,10 @@
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32969698" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.34871796" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24034335" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24034335" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
@@ -384,15 +371,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/GeneratePairs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
+        <state relative-caret-position="283">
           <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/PSRS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="747">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -401,7 +388,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="-2008">
           <caret line="45" column="75" lean-forward="true" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -413,7 +400,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
+        <state relative-caret-position="418">
           <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -421,10 +408,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PSRS.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="438">
+          <caret line="56" column="64" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
