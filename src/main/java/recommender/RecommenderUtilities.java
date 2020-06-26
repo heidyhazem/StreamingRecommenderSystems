@@ -58,44 +58,46 @@ public class RecommenderUtilities {
      * @throws Exception
      */
     public Map<String,Float> estimateRateForItems (MapState<String,Integer> allItems,ArrayList<Tuple2<String,Float>> topKSimilarthings,
-                                                   MapState<String,Map<String,Float>> userItemRatingHistory) throws Exception {
+                                                   MapState<String,Map<String,Float>> userItemRatingHistory, String curentUser) throws Exception {
 
         Map<String,Float> estimatedRatesForItems = new HashMap<>();
 
 
         for (String itemInAll : allItems.keys()){
 
-            Float denominator = 0f;
-            Float numerator = 0f;
+            //skipping already rated items by the user
+            if( ! userItemRatingHistory.get(curentUser).containsKey(itemInAll)){
+                //TODO: Handle Nulls
+                Float denominator = 0f;
+                Float numerator = 0f;
 
-            for (Tuple2<String, Float> simUser : topKSimilarthings ){
+                for (Tuple2<String, Float> simUser : topKSimilarthings ){
 
-                Integer rateUserForItem;
+                    Integer rateUserForItem;
 
-                //estimated rate
-                if(userItemRatingHistory.get(simUser.f0).containsKey(itemInAll)){
+                    //estimated rate
+                    //to know what the rate for the other user to the item
+                    if(userItemRatingHistory.get(simUser.f0).containsKey(itemInAll)){
 
-                    rateUserForItem = 1;
+                        rateUserForItem = 1;
+                    }
+                    else {
+                        rateUserForItem = 0;
+                    }
+
+                    //numerator
+                    numerator += rateUserForItem*(simUser.f1);
+
+                    //denominator
+                    denominator += simUser.f1;
                 }
-                else {
-                    rateUserForItem = 0;
-                }
 
-                //numerator
-                numerator += rateUserForItem*(simUser.f1);
-
-                //denominator
-                denominator += simUser.f1;
+                Float estimatedRate = numerator/denominator;
+                estimatedRatesForItems.put(itemInAll,estimatedRate);
             }
 
-            Float estimatedRate = numerator/denominator;
-            estimatedRatesForItems.put(itemInAll,estimatedRate);
         }
 
         return estimatedRatesForItems;
     }
-
-
-
-
 }

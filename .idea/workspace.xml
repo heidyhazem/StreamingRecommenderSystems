@@ -7,7 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8d7aea7-f8ff-43a8-83de-aa37814101df" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Evaluation/EvaluationMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Evaluation/RecallStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ParallelStreamingRecommenderSystems_jar/ParallelStreamingRecommenderSystems.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ParallelStreamingRecommenderSystems_jar/ParallelStreamingRecommenderSystems.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PSRS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PSRS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/partitioning/Batch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/partitioning/Batch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/partitioning/SplittingAndReplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/partitioning/SplittingAndReplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PSRS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PSRS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/incrementalNeighbourhood/IncrementalCosineSim.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/incrementalNeighbourhood/IncrementalCosineSim.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,23 +35,10 @@
       <file leaf-file-name="IncrementalCosineSim.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecommenderAbstract.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -48,37 +47,43 @@
       <file leaf-file-name="IncNeighbrCFRec.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2008">
-              <caret line="45" column="75" lean-forward="true" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
+            <state relative-caret-position="427">
+              <caret line="302" column="4" selection-start-line="302" selection-start-column="4" selection-end-line="302" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#14413#14975#0" expanded="true" />
-                <element signature="e#14974#14975#0" expanded="true" />
+                <element signature="e#14707#15368#0" expanded="true" />
+                <element signature="e#15367#15368#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PSRS.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Batch.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/partitioning/Batch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="29" column="7" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="29" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SplittingAndReplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/partitioning/SplittingAndReplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="26" column="81" lean-forward="true" selection-start-line="26" selection-start-column="81" selection-end-line="26" selection-end-column="81" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PSRS.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/PSRS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="747">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecommenderUtilities.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="56" column="64" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="369">
+              <caret line="54" column="143" selection-start-line="54" selection-start-column="143" selection-end-line="54" selection-end-column="143" />
             </state>
           </provider>
         </entry>
@@ -97,6 +102,12 @@
       <find>userInHistory</find>
       <find>itemRate</find>
       <find>estimatedRateUserItemMap</find>
+      <find>out</find>
+      <find>userSimilarities</find>
+      <find>out.col</find>
+      <find>out.c</find>
+      <find>userItemRatingHistory</find>
+      <find>allItems</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -109,19 +120,25 @@
         <option value="$PROJECT_DIR$/src/main/java/recommender/recommenderAbstract.java" />
         <option value="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/GeneratePairs.java" />
         <option value="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalUserCosineSim.java" />
-        <option value="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java" />
         <option value="$PROJECT_DIR$/src/main/java/recommender/recommenderUtilities.java" />
-        <option value="$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java" />
-        <option value="$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java" />
-        <option value="$PROJECT_DIR$/src/main/java/PSRS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Evaluation/RecallOnline.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Evaluation/EvaluationInc.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Evaluation/RecallStream.java" />
+        <option value="$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java" />
+        <option value="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java" />
+        <option value="$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java" />
+        <option value="$PROJECT_DIR$/src/main/java/partitioning/Batch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/partitioning/SplittingAndReplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PSRS.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
-    <option name="height" value="877" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -172,15 +189,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="incrementalNeighbourhood" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ParallelStreamingRecommenderSystems" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ParallelStreamingRecommenderSystems" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="partitioning" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -209,6 +218,11 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="ParallelStreamingRecommenderSystems" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -250,6 +264,11 @@
       <properties />
       <listeners />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
     <option name="projectSyncType">
@@ -274,8 +293,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -285,12 +303,12 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32969698" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.34871796" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3272727" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24034335" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16809729" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
@@ -344,13 +362,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/partitioning/Batch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="703">
@@ -358,63 +369,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/GeneratePairs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        <state relative-caret-position="292">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="95" column="68" selection-start-line="95" selection-start-column="68" selection-end-line="95" selection-end-column="68" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/GeneratePairs.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Evaluation/RecallStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="180">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#579#944#0" expanded="true" />
+            <element signature="e#943#944#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PSRS.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Evaluation/EvaluationMethods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="1125">
+          <caret line="75" column="62" selection-start-line="75" selection-start-column="62" selection-end-line="75" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2008">
-          <caret line="45" column="75" lean-forward="true" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
+        <state relative-caret-position="427">
+          <caret line="302" column="4" selection-start-line="302" selection-start-column="4" selection-end-line="302" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#14413#14975#0" expanded="true" />
-            <element signature="e#14974#14975#0" expanded="true" />
+            <element signature="e#14707#15368#0" expanded="true" />
+            <element signature="e#15367#15368#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/partitioning/Batch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="163">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="29" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/partitioning/SplittingAndReplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="26" column="81" lean-forward="true" selection-start-line="26" selection-start-column="81" selection-end-line="26" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/PSRS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="56" column="64" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="369">
+          <caret line="54" column="143" selection-start-line="54" selection-start-column="143" selection-end-line="54" selection-end-column="143" />
         </state>
       </provider>
     </entry>

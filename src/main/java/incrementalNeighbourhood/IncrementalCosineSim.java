@@ -7,16 +7,11 @@
 package incrementalNeighbourhood;
 
 
-import org.apache.flink.api.common.state.MapState;
-import org.apache.flink.api.java.tuple.Tuple2;
-import org.apache.flink.api.java.tuple.Tuple3;
-
 /**
  * For implementing  collaborative filtering algorithm based on Cosine Similarity neighbourhood method
  * The Incremental Cosine similarity here assuming binary data(ratings).
  */
 public class IncrementalCosineSim {
-
 
     /**
      * Calculate cosine similarity for incrementally based on equation|(Iu∩Iv)|/|Iu|× |Iv|
@@ -26,13 +21,7 @@ public class IncrementalCosineSim {
      * @return the cosine similarity between two users
      */
     public Float calculatecosineSimilarity (Integer commonCount, Integer count1, Integer count2){
-        int similarity = commonCount/(count1*count2);
-        return Float.valueOf(similarity);
+        Float similarity = (float)commonCount/(count1*count2);
+        return similarity;
     }
-
-
-
-
-
-
 }

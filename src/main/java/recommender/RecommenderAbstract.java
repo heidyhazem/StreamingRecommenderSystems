@@ -32,7 +32,7 @@ public abstract class RecommenderAbstract {
      * @param k number ot recommended items
      * @return ArrayList of the recommended items
      */
-    public abstract DataStream<ArrayList<String>> recommend(DataStream<Tuple3<Integer,String,Map<String,Float>>> estimatedRatesOfItems,Integer k);
+    public abstract DataStream<Tuple3<Integer,String,ArrayList<String>>> recommend(DataStream<Tuple3<Integer,String,Map<String,Float>>> estimatedRatesOfItems,Integer k);
 
 
 

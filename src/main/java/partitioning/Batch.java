@@ -29,7 +29,7 @@ public class Batch {
      @return the input stream with a key
      */
 
-    public  DataStream<Tuple4<Integer,String,String,Float>>  generateOneKey(DataStream<Tuple3<String, String, Float>> inputStream){
+    public  DataStream<Tuple4<Integer,String,String,Float>> generateOneKey(DataStream<Tuple3<String, String, Float>> inputStream){
 
         DataStream<Tuple4<Integer,String,String,Float>> withKeyStream = inputStream.flatMap(new FlatMapFunction<Tuple3<String, String, Float>, Tuple4<Integer, String, String, Float>>() {
             @Override
