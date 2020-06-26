@@ -88,6 +88,7 @@ public class IncNeighbrCFRec extends RecommenderAbstract {
                                 try{
 
                                     Float sim = userSimilarities.get(userPair).f3;
+
                                     currentUserSimilaritiesMap.put(userInHistory,sim);
 
                                 }
@@ -101,14 +102,13 @@ public class IncNeighbrCFRec extends RecommenderAbstract {
 
                             //step2: Estimate rate from user to all unrated items
 
-
                             Map<String,Float> estimatedRatesForItems = new HashMap<>();
 
                             estimatedRatesForItems = new RecommenderUtilities().estimateRateForItems(
-                                    allItems,topKSimilarUsers,userItemRatingHistory);
+                                    allItems,topKSimilarUsers,userItemRatingHistory,user);
 
                             //htl3 el map de ashan ytrtbo we ytl3 recommendation
-                            out.collect(Tuple3.of(input.f0,user,estimatedRatesForItems));
+                            out.collect(Tuple3.of(input.f0,item,estimatedRatesForItems));
                         }
 
                         //TODO: Refactor state (similarities can be eliminated)
@@ -149,13 +149,15 @@ public class IncNeighbrCFRec extends RecommenderAbstract {
                                     Integer currentUserItemCount = commonCount1Count2.getField(positionOfCurrentUserInTheTuple+1);
                                     commonCount1Count2.setField(currentUserItemCount+1, positionOfCurrentUserInTheTuple+1);
 
-                                    //step2:5 update sim state itself
-                                    userSimilarities.put(userPair,commonCount1Count2);
 
 
                                     //userSimilarities
                                     Float cosSim =new IncrementalCosineSim().calculatecosineSimilarity(commonCount1Count2.f0,commonCount1Count2.f1,commonCount1Count2.f2);
+
                                     commonCount1Count2.setField(cosSim,3);
+
+                                    //step2:5 update sim state itself
+                                    userSimilarities.put(userPair,commonCount1Count2);
                                 }
 
                             }
@@ -165,7 +167,8 @@ public class IncNeighbrCFRec extends RecommenderAbstract {
                             // userItemRatingHistory
 
                             Map<String,Float> toUpdateItems = userItemRatingHistory.get(user);
-                            toUpdateItems.put(user,rate);
+
+                            toUpdateItems.put(item,rate);
                             userItemRatingHistory.put(user,toUpdateItems);
 
                             //allItems
@@ -200,6 +203,7 @@ public class IncNeighbrCFRec extends RecommenderAbstract {
 
                                 //otherUserItemsCount
                                 Integer otherUserItemsCount = userItemRatingHistory.get(userInHistory).size();
+
                                 //get the position of the other item in pair
                                 Integer positionOfTheOtherUser;
                                 if(positionOfCurrentUserInTheTuple.equals(1)){
@@ -213,14 +217,22 @@ public class IncNeighbrCFRec extends RecommenderAbstract {
 
                                 //userSimilarities
                                 Float cosSim =new IncrementalCosineSim().calculatecosineSimilarity(commonCount1Count2.f0,commonCount1Count2.f1,commonCount1Count2.f2);
-                                commonCount1Count2.setField(cosSim,3);
-                            }
 
+                                Map<String,Float> y  = new HashMap<>();
+                                y.put("item", Float.valueOf(cosSim));
+                                //out.collect(Tuple3.of(999,userInHistory,y));
+
+                                commonCount1Count2.setField(cosSim,3);
+                                userSimilarities.put(userPair,commonCount1Count2);
+
+                            }
 
                             //********************** Step3: Update other states  **************************************************
 
                             // userItemRatingHistory
                             Map<String,Float> toUpdateItems = new HashMap<>();
+
+
                             toUpdateItems.put(item,rate);
 
                             userItemRatingHistory.put(user,toUpdateItems);
@@ -288,22 +300,21 @@ public class IncNeighbrCFRec extends RecommenderAbstract {
     }
 
 
-
     @Override
-    public DataStream<ArrayList<String>> recommend(DataStream<Tuple3<Integer,String, Map<String, Float>>> estimatedRatesOfItems, Integer K) {
+    public DataStream<Tuple3<Integer,String,ArrayList<String>>> recommend(DataStream<Tuple3<Integer,String, Map<String, Float>>> estimatedRatesOfItems, Integer K) {
 
-
-        DataStream<ArrayList<String>> recommendedItems = estimatedRatesOfItems.keyBy(0)
-                .process(new KeyedProcessFunction<Tuple, Tuple3<Integer, String, Map<String, Float>>, ArrayList<String>>() {
+        DataStream<Tuple3<Integer,String,ArrayList<String>>> itemRecommList = estimatedRatesOfItems.keyBy(0)
+                .process(new KeyedProcessFunction<Tuple, Tuple3<Integer, String, Map<String, Float>>, Tuple3<Integer, String, ArrayList<String>>>() {
                     @Override
-                    public void processElement(Tuple3<Integer, String, Map<String, Float>> input, Context context, Collector<ArrayList<String>> out) throws Exception {
+                    public void processElement(Tuple3<Integer, String, Map<String, Float>> input, Context context, Collector<Tuple3<Integer, String, ArrayList<String>>> out) throws Exception {
 
+                        String item = input.f1;
                         ArrayList<String> recommendedItemsList = new RecommenderUtilities().topKItems(input.f2,K);
 
-                        out.collect(recommendedItemsList);
+                        out.collect(Tuple3.of(input.f0,item,recommendedItemsList));
                     }
                 });
 
-        return recommendedItems;
+        return itemRecommList;
     }
 }
