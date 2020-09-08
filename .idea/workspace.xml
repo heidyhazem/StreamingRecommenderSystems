@@ -7,25 +7,142 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8d7aea7-f8ff-43a8-83de-aa37814101df" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Forgetting/DecayingFactorUBSC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Forgetting/Forget.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Forgetting/LFU.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Forgetting/LRU.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Forgetting/LRUForgetting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Forgetting/SlidingWindowUBCS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Matrix/DenseMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/mlAnalytics-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/.ipynb_checkpoints/plotting_com_swubsc_normal-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Comparisons_Results/normal_vs_UBSW_WINDOW=1000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Comparisons_Results/result.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Comparisons_Results/results.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Comparisons_Results/time_results.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/LFU/old_structure/100k/recall1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/LFU/old_structure/100k/recall10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/LFU/old_structure/100k/recall2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/LFU/old_structure/100k/recall4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/LFU/old_structure/100k/recall6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/LFU/old_structure/100k/recall8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/LFU/old_structure/100k/resultslfu.rtf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/LRU/old_structure/100k/recall1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/LRU/old_structure/100k/recall10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/LRU/old_structure/100k/recall2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/LRU/old_structure/100k/recall4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/LRU/old_structure/100k/recall6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/LRU/old_structure/100k/recall8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/LRU/old_structure/100k/resultslfu.rtf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/SlidingWindowUBSC_ni_ml100/ForgettingOnlyItemsFromUserItemRatingHistory_window=1000/recall1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/SlidingWindowUBSC_ni_ml100/ForgettingOnlyItemsFromUserItemRatingHistory_window=1000/recall10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/SlidingWindowUBSC_ni_ml100/ForgettingOnlyItemsFromUserItemRatingHistory_window=1000/recall2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/SlidingWindowUBSC_ni_ml100/ForgettingOnlyItemsFromUserItemRatingHistory_window=1000/recall4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/SlidingWindowUBSC_ni_ml100/ForgettingOnlyItemsFromUserItemRatingHistory_window=1000/recall6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/SlidingWindowUBSC_ni_ml100/ForgettingOnlyItemsFromUserItemRatingHistory_window=1000/recall8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/original/changing_ni_ml100/.ipynb_checkpoints/plotting-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/original/changing_ni_ml100/.ipynb_checkpoints/plotting2-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/original/changing_ni_ml100/plotting.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/original/changing_ni_ml100/recall1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/original/changing_ni_ml100/recall10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/original/changing_ni_ml100/recall2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/original/changing_ni_ml100/recall4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/original/changing_ni_ml100/recall6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/original/changing_ni_ml100/recall8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/original/changing_ni_ml100/resultsl.rtf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/original/changing_ni_ml100/sma.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/plotting_com_swubsc_normal.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ml100.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ml1m.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mlAnalytics.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Matrix/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Matrix/MatrixSize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Matrix/Row.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Matrix/SparseBinaryMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/WordWithCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/DecayingFactorUBSC$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/DecayingFactorUBSC$1$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/DecayingFactorUBSC$1$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/DecayingFactorUBSC$1$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/DecayingFactorUBSC$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/DecayingFactorUBSC.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRU.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Matrix/DenseMatrix.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Matrix/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Matrix/MatrixSize.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Matrix/Row.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Matrix/SparseBinaryMatrix$LabelerType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Matrix/SparseBinaryMatrix.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Matrixo/ST.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Matrixo/SparseMatrix.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Matrixo/SparseVector.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Matrixo/StdIn.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Matrixo/StdOut.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/WordWithCount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/test$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/test$1$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/test$1$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/test$1$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/test$1$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/test$1$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/test$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/xx.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inputheidy3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/inputheidy3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ParallelStreamingRecommenderSystems_jar/ParallelStreamingRecommenderSystems.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ParallelStreamingRecommenderSystems_jar/ParallelStreamingRecommenderSystems.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ParallelStreamingRecommenderSystems_jar/ParallelStreamingRecommenderSystems.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Forgetting/DecayingFactorUBSC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forgetting/DecayingFactorUBSC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Forgetting/Forget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forgetting/Forget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Forgetting/LFU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forgetting/LFU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Forgetting/LRU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forgetting/LRU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Forgetting/LRUForgetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forgetting/LRUForgetting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Forgetting/SlidingWindowUBCS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forgetting/SlidingWindowUBCS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Matrix/DenseMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Matrix/DenseMatrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PSRS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PSRS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/partitioning/SplittingAndReplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/partitioning/SplittingAndReplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PSRS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PSRS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PSRS.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/incrementalNeighbourhood/IncrementalCosineSim.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/incrementalNeighbourhood/IncrementalCosineSim.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/partitioning/SplittingAndReplication$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/partitioning/SplittingAndReplication$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$1.class" afterDir="false" />
@@ -38,6 +155,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/recommender/RecommenderAbstract.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/RecommenderAbstract.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/RecommenderUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/RecommenderUtilities.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
