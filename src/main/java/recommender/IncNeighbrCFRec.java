@@ -1,5 +1,9 @@
 package recommender;
 
+import Forgetting.Forget;
+import Forgetting.LFU;
+import Forgetting.LRU;
+import Forgetting.SlidingWindowUBCS;
 import org.apache.flink.api.common.state.MapState;
 import org.apache.flink.api.common.state.MapStateDescriptor;
 import org.apache.flink.api.common.typeinfo.TypeHint;
@@ -83,7 +87,7 @@ public class IncNeighbrCFRec extends RecommenderAbstract {
                                 //get the ordered pairOf users(key)
                                 Tuple3<String,String,Integer>  keyWithPosition = new GeneratePairs().getKey(user,userInHistory);
                                 Tuple2<String,String> userPair = Tuple2.of(keyWithPosition.f0,keyWithPosition.f1);
-                                Integer positionOfCurrentUserInTheTuple = keyWithPosition.f2;
+                                //Integer positionOfCurrentUserInTheTuple = keyWithPosition.f2;
 
                                 try{
 
@@ -93,7 +97,7 @@ public class IncNeighbrCFRec extends RecommenderAbstract {
 
                                 }
                                 catch (Exception e){
-                                    System.out.println("The pairs is not exist");
+                                    System.out.println("The pair is not exist");
                                 }
                             }
 
@@ -298,6 +302,31 @@ public class IncNeighbrCFRec extends RecommenderAbstract {
 
         return estimatedRateUserItemMap;
     }
+
+
+    //DataStream With Forgetting Sliding window
+    @Override
+    public DataStream<Tuple3<Integer, String, Map<String, Float>>> fit(DataStream<Tuple4<Integer, String, String, Float>> withKeyStream, Integer k, String forgettingTechnique) {
+
+        if(forgettingTechnique.equals("SlidingWindowUBCS")){
+            return new SlidingWindowUBCS().fit(withKeyStream,k,1000,1);
+        }
+        else if(forgettingTechnique.equals("LFU")){
+            return new Forget().fit(withKeyStream,k,"LFU");
+            //return new LFU().fit(withKeyStream,k);
+        }
+        else if(forgettingTechnique.equals("LRU")){
+            return new LRU().fit(withKeyStream,k,"LRU");
+        }
+        else{
+            return null;
+        }
+
+    }
+
+
+    //DataStream With Forgetting Sliding window
+
 
 
     @Override

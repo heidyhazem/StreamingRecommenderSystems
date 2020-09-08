@@ -6,6 +6,8 @@
 
 package incrementalNeighbourhood;
 
+import java.lang.Math;
+
 
 /**
  * For implementing  collaborative filtering algorithm based on Cosine Similarity neighbourhood method
@@ -21,7 +23,8 @@ public class IncrementalCosineSim {
      * @return the cosine similarity between two users
      */
     public Float calculatecosineSimilarity (Integer commonCount, Integer count1, Integer count2){
-        Float similarity = (float)commonCount/(count1*count2);
+
+        Float similarity = (float)commonCount/(float)(Math.sqrt(count1)*Math.sqrt(count2));
         return similarity;
     }
 }

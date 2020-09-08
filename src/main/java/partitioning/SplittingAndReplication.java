@@ -76,7 +76,7 @@ public class SplittingAndReplication {
                     }
                 }
 
-                out.collect(Tuple4.of(interactionHashNumber, input.f0, input.f1, input.f2));
+                out.collect(Tuple4.of(340*interactionHashNumber, input.f0, input.f1, input.f2));
 
             }
         });

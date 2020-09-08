@@ -1,5 +1,6 @@
 package recommender;
 
+import Matrix.SparseBinaryMatrix;
 import org.apache.flink.api.common.state.MapState;
 import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.api.java.tuple.Tuple3;
@@ -7,6 +8,7 @@ import org.apache.flink.api.java.tuple.Tuple3;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class RecommenderUtilities {
 
@@ -96,6 +98,50 @@ public class RecommenderUtilities {
                 estimatedRatesForItems.put(itemInAll,estimatedRate);
             }
 
+        }
+
+        return estimatedRatesForItems;
+    }
+
+
+
+    public Map<String,Float> estimateRateForItems (Set<String> allItems, ArrayList<Tuple2<String,Float>> topKSimilarthings,
+                                                   SparseBinaryMatrix userItemRatingHistory, String curentUser) throws Exception {
+
+
+        Map<String,Float> estimatedRatesForItems = new HashMap<>();
+
+        for (String itemInAll : allItems){
+            if( ! userItemRatingHistory.ratedPositively(curentUser,itemInAll)){
+                //TODO: Handle Nulls
+                Float denominator = 0f;
+                Float numerator = 0f;
+
+                for (Tuple2<String, Float> simUser : topKSimilarthings ){
+                    Integer rateUserForItem;
+
+                    //estimated rate
+                    //to know what the rate for the other user to the item
+
+                    if(userItemRatingHistory.ratedPositively(simUser.f0,itemInAll)){
+                        rateUserForItem = 1;
+                    }
+                    else {
+                        rateUserForItem = 0;
+                    }
+
+                    //numerator
+                    numerator += rateUserForItem*(simUser.f1);
+
+                    //denominator
+                    denominator += simUser.f1;
+
+
+                }
+
+                Float estimatedRate = numerator/denominator;
+                estimatedRatesForItems.put(itemInAll,estimatedRate);
+            }
         }
 
         return estimatedRatesForItems;

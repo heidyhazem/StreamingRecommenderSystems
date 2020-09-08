@@ -24,6 +24,17 @@ public abstract class RecommenderAbstract {
     public abstract DataStream<Tuple3<Integer,String,Map<String,Float>>> fit(DataStream<Tuple4<Integer,String,String,Float>> withKeyStream, Integer k);
 
 
+    /**
+     *
+     * @param withKeyStream The input data stream Keyed for partitioning(key,user,item,rate)
+     * @param k count of similar items/users
+     * @param forgettingTechnique the forgetting technique should be used
+     * @return  Map of predicted rates for the items  user has not rated
+     */
+    public abstract DataStream<Tuple3<Integer,String,Map<String,Float>>> fit(DataStream<Tuple4<Integer, String, String, Float>> withKeyStream, Integer k,
+                                                                             String forgettingTechnique);
+
+
 
 
     /**

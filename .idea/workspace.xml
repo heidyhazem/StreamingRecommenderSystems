@@ -7,19 +7,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8d7aea7-f8ff-43a8-83de-aa37814101df" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Evaluation/EvaluationMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Evaluation/RecallStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Forgetting/DecayingFactorUBSC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Forgetting/Forget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Forgetting/LFU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Forgetting/LRU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Forgetting/LRUForgetting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Forgetting/SlidingWindowUBCS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Matrix/DenseMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ParallelStreamingRecommenderSystems_jar/ParallelStreamingRecommenderSystems.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ParallelStreamingRecommenderSystems_jar/ParallelStreamingRecommenderSystems.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputheidy3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/inputheidy3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ParallelStreamingRecommenderSystems_jar/ParallelStreamingRecommenderSystems.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PSRS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PSRS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/partitioning/Batch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/partitioning/Batch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/partitioning/SplittingAndReplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/partitioning/SplittingAndReplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PSRS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PSRS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PSRS.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/incrementalNeighbourhood/IncrementalCosineSim.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/incrementalNeighbourhood/IncrementalCosineSim.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/partitioning/SplittingAndReplication$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/partitioning/SplittingAndReplication$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/RecommenderAbstract.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/RecommenderAbstract.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,47 +49,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="IncrementalCosineSim.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="IncNeighbrCFRec.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="302" column="4" selection-start-line="302" selection-start-column="4" selection-end-line="302" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#14707#15368#0" expanded="true" />
-                <element signature="e#15367#15368#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Batch.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/partitioning/Batch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="29" column="7" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="29" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SplittingAndReplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/partitioning/SplittingAndReplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="26" column="81" lean-forward="true" selection-start-line="26" selection-start-column="81" selection-end-line="26" selection-end-column="81" />
+            <state relative-caret-position="755">
+              <caret line="314" column="12" selection-start-line="314" selection-start-column="12" selection-end-line="314" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,11 +62,124 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PSRS.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Forget.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/Forget.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-88">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LRUForgetting.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LRUForgetting.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LRU.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LRU.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecommenderUtilities.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="113" column="40" selection-start-line="113" selection-start-column="40" selection-end-line="113" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SparseBinaryMatrix.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/SparseBinaryMatrix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2010">
+              <caret line="140" column="10" lean-forward="true" selection-start-line="140" selection-start-column="10" selection-end-line="140" selection-end-column="10" />
+              <folding>
+                <element signature="e#1969#1970#0" expanded="true" />
+                <element signature="e#2013#2014#0" expanded="true" />
+                <element signature="e#2217#2218#0" expanded="true" />
+                <element signature="e#2258#2259#0" expanded="true" />
+                <element signature="e#4464#4465#0" expanded="true" />
+                <element signature="e#4529#4530#0" expanded="true" />
+                <element signature="e#6717#6718#0" expanded="true" />
+                <element signature="e#6777#6778#0" expanded="true" />
+                <element signature="e#6829#6830#0" expanded="true" />
+                <element signature="e#6891#6892#0" expanded="true" />
+                <element signature="e#9281#9282#0" expanded="true" />
+                <element signature="e#9332#9333#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Row.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/Row.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1103">
+              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2679#2680#0" expanded="true" />
+                <element signature="e#2701#2702#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="742">
+              <caret line="194" column="48" lean-forward="true" selection-start-line="194" selection-start-column="48" selection-end-line="194" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LFU.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LFU.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="237" column="75" selection-start-line="237" selection-start-column="75" selection-end-line="237" selection-end-column="75" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#15281#15301#0" expanded="true" />
+                <element signature="e#11951#11960#0" expanded="true" />
+                <element signature="e#12724#12733#0" expanded="true" />
+                <element signature="e#13027#13036#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PSRS.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/PSRS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="54" column="143" selection-start-line="54" selection-start-column="143" selection-end-line="54" selection-end-column="143" />
+            <state relative-caret-position="815">
+              <caret line="91" column="9" lean-forward="true" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,11 +199,23 @@
       <find>itemRate</find>
       <find>estimatedRateUserItemMap</find>
       <find>out</find>
-      <find>userSimilarities</find>
       <find>out.col</find>
       <find>out.c</find>
-      <find>userItemRatingHistory</find>
       <find>allItems</find>
+      <find>userItemRatingHistory</find>
+      <find>la</find>
+      <find>content</find>
+      <find>userFootPrint</find>
+      <find>itemFootPrint</find>
+      <find>spar</find>
+      <find>getRowLabels</find>
+      <find>getColumnLabels</find>
+      <find>setC</find>
+      <find>No column has the label</find>
+      <find>rated</find>
+      <find>size</find>
+      <find>userSimilarities</find>
+      <find>rat</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -116,27 +224,58 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/recommender/recommenderAbstract.java" />
         <option value="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/GeneratePairs.java" />
         <option value="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalUserCosineSim.java" />
         <option value="$PROJECT_DIR$/src/main/java/recommender/recommenderUtilities.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java" />
         <option value="$PROJECT_DIR$/src/main/java/Evaluation/RecallOnline.java" />
         <option value="$PROJECT_DIR$/src/main/java/Evaluation/EvaluationInc.java" />
         <option value="$PROJECT_DIR$/src/main/java/Evaluation/RecallStream.java" />
-        <option value="$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java" />
-        <option value="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java" />
-        <option value="$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java" />
         <option value="$PROJECT_DIR$/src/main/java/partitioning/Batch.java" />
         <option value="$PROJECT_DIR$/src/main/java/partitioning/SplittingAndReplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SparseVector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StdOut.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StdIn.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ST.java" />
+        <option value="$PROJECT_DIR$/src/main/java/WordWithCount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SparseMatrix.java" />
+        <option value="$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Matrix/SparseVector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Matrix/StdIn.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Matrix/StdOut.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Matrix/SparseTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Matrix/ST.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Matrix/SparseMatrix.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sparsematrix/MatrixSize.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Forgetting/SlidingWindowUBCS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sparsematrix/SparseBinaryMatrix.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sparsematrix/Row.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sparsematrix/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Forgetting/DecayingFactorUBSC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Matrix/DenseMatrixInc.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Matrix/DenseRow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Forgetting/IncNCF_Forget_by.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Forgetting/LRU.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Forgetting/LRUForgetting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Matrix/DenseMatrix.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xx.java" />
+        <option value="$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java" />
         <option value="$PROJECT_DIR$/src/main/java/PSRS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Matrix/Row.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Matrix/SparseBinaryMatrix.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Forgetting/LFU.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Matrix/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Forgetting/Forget.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -146,6 +285,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -157,17 +297,6 @@
             <path>
               <item name="ParallelStreamingRecommenderSystems" type="b2602c69:ProjectViewProjectNode" />
               <item name="ParallelStreamingRecommenderSystems" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ParallelStreamingRecommenderSystems" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ParallelStreamingRecommenderSystems" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ParallelStreamingRecommenderSystems" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ParallelStreamingRecommenderSystems" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -189,14 +318,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="partitioning" type="462c0819:PsiDirectoryNode" />
+              <item name="Forgetting" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -217,13 +345,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Matrix.Main" />
+      <module name="ParallelStreamingRecommenderSystems" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Matrix.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="PSRS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PSRS" />
+      <module name="ParallelStreamingRecommenderSystems" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="SparseMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Matrixo.SparseMatrix" />
       <module name="ParallelStreamingRecommenderSystems" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="ParallelStreamingRecommenderSystems" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="xx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xx" />
+      <module name="ParallelStreamingRecommenderSystems" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -264,9 +418,20 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Application.test" />
+      <item itemvalue="Application.SparseMatrix" />
+      <item itemvalue="Application.xx" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.PSRS" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.PSRS" />
+        <item itemvalue="Application.xx" />
+        <item itemvalue="Application.SparseMatrix" />
+        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>
@@ -295,77 +460,118 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32969698" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3272727" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16809729" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.48783976" weight="0.32848486" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.11230329" side_tool="true" visible="true" weight="0.27030304" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49642345" weight="0.30545455" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.8876967" visible="true" weight="0.27030304" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.21101573" />
+      <window_info id="Structure" order="1" sideWeight="0.5016611" side_tool="true" weight="0.21101573" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="bottom" id="Run" order="6" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24034335" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32969698" />
-      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Messages" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/readingSources/SourceWithTimestamp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        <state relative-caret-position="4245">
+          <caret line="302" column="4" selection-start-line="302" selection-start-column="4" selection-end-line="302" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/partitioning/Batch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="227" column="19" selection-start-line="227" selection-start-column="19" selection-end-line="227" selection-end-column="19" />
+        <state relative-caret-position="345">
+          <caret line="29" column="7" selection-start-line="25" selection-start-column="4" selection-end-line="29" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PSRS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/partitioning/SplittingAndReplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="66" lean-forward="true" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4245">
+          <caret line="302" column="4" selection-start-line="302" selection-start-column="4" selection-end-line="302" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/partitioning/Batch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="7" selection-start-line="25" selection-start-column="4" selection-end-line="29" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/partitioning/SplittingAndReplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="26" column="81" selection-start-line="26" selection-start-column="81" selection-end-line="26" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PSRS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -376,32 +582,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="95" column="68" selection-start-line="95" selection-start-column="68" selection-end-line="95" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Evaluation/RecallStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="43" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#579#944#0" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -412,49 +596,171 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/partitioning/Batch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="345">
+          <caret line="29" column="7" selection-start-line="25" selection-start-column="4" selection-end-line="29" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/partitioning/SplittingAndReplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/StdOut.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/StdIn.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/SparseVector.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ST.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/SparseMatrix.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="30" column="69" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrixo/StdIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrixo/StdOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/SparseTest.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="181" column="8" selection-start-line="181" selection-start-column="8" selection-end-line="181" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrixo/ST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="243" column="25" selection-start-line="243" selection-start-column="25" selection-end-line="243" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrixo/SparseVector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrixo/SparseMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/MatrixSize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/SlidingWindowUBCS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3777">
+          <caret line="309" column="26" selection-start-line="309" selection-start-column="26" selection-end-line="309" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/DenseMatrixInc.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/DenseRow.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/DecayingFactorUBSC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="20" column="111" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="20" selection-end-column="111" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalPearsonCorr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="225">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/test2.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/IncNCF_Forget_by.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/readingSources/SourceWithTimestamp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="302" column="4" selection-start-line="302" selection-start-column="4" selection-end-line="302" selection-end-column="4" />
+        <state relative-caret-position="501">
+          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/DenseMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="150" selection-start-line="150" selection-end-line="150" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#14707#15368#0" expanded="true" />
-            <element signature="e#15367#15368#0" expanded="true" />
+            <element signature="e#150#163#0" expanded="true" />
+            <element signature="e#4325#4363#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/partitioning/Batch.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="29" column="7" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="29" selection-end-column="7" />
+        <state relative-caret-position="-1305">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/partitioning/SplittingAndReplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/xx.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="26" column="81" lean-forward="true" selection-start-line="26" selection-start-column="81" selection-end-line="26" selection-end-column="81" />
+        <state relative-caret-position="166">
+          <caret line="90" column="12" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/WordWithCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -463,8 +769,115 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PSRS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="54" column="143" selection-start-line="54" selection-start-column="143" selection-end-line="54" selection-end-column="143" />
+        <state relative-caret-position="815">
+          <caret line="91" column="9" lean-forward="true" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/Row.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1103">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2679#2680#0" expanded="true" />
+            <element signature="e#2701#2702#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="194" column="48" lean-forward="true" selection-start-line="194" selection-start-column="48" selection-end-line="194" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="113" column="40" selection-start-line="113" selection-start-column="40" selection-end-line="113" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="755">
+          <caret line="314" column="12" selection-start-line="314" selection-start-column="12" selection-end-line="314" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/Forget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-88">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/SparseBinaryMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2010">
+          <caret line="140" column="10" lean-forward="true" selection-start-line="140" selection-start-column="10" selection-end-line="140" selection-end-column="10" />
+          <folding>
+            <element signature="e#1969#1970#0" expanded="true" />
+            <element signature="e#2013#2014#0" expanded="true" />
+            <element signature="e#2217#2218#0" expanded="true" />
+            <element signature="e#2258#2259#0" expanded="true" />
+            <element signature="e#4464#4465#0" expanded="true" />
+            <element signature="e#4529#4530#0" expanded="true" />
+            <element signature="e#6717#6718#0" expanded="true" />
+            <element signature="e#6777#6778#0" expanded="true" />
+            <element signature="e#6829#6830#0" expanded="true" />
+            <element signature="e#6891#6892#0" expanded="true" />
+            <element signature="e#9281#9282#0" expanded="true" />
+            <element signature="e#9332#9333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LFU.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="237" column="75" selection-start-line="237" selection-start-column="75" selection-end-line="237" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#15281#15301#0" expanded="true" />
+            <element signature="e#11951#11960#0" expanded="true" />
+            <element signature="e#12724#12733#0" expanded="true" />
+            <element signature="e#13027#13036#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LRUForgetting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LRU.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

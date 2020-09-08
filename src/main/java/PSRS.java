@@ -15,6 +15,8 @@ import Evaluation.*;
 import java.util.ArrayList;
 import java.util.Map;
 
+
+
 public class PSRS {
 
     public static void main (String[] args) throws Exception{
@@ -24,6 +26,8 @@ public class PSRS {
 
         //set streaming execution environment
         env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime);
+
+        //env.setParallelism(4);
 
 
         /**
@@ -46,19 +50,33 @@ public class PSRS {
         /**
          Generate unified key for all records for batch partitioning
          */
-        //DataStream<Tuple4<Integer,String,String,Float>> withKeyedStream = new Batch(inputStream).generateOneKey(inputStream);
+        DataStream<Tuple4<Integer,String,String,Float>> withKeyedStream = new Batch(inputStream).generateOneKey(inputStream);
 
         /**
          * Use Splitting and replication mechanism for partitioning
          */
         //TODO:change ni to be a paramter
-        DataStream<Tuple4<Integer,String,String,Float>> withKeyedStream = new SplittingAndReplication(inputStream).generateOneKey(inputStream,4);
+        //DataStream<Tuple4<Integer,String,String,Float>> withKeyedStream = new SplittingAndReplication(inputStream).generateOneKey(inputStream,8);
 
 
         //*************************************** Recommendation part******************************************************************
+/*
 
         DataStream<Tuple3<Integer,String, Map<String, Float>>> estimatedRatesItems = new IncNeighbrCFRec().fit(
                 withKeyedStream,10);
+*/
+
+        /*DataStream<Tuple3<Integer,String, Map<String,Float>>> estimatedRatesItems = new IncNeighbrCFRec().fit(
+                withKeyedStream,10, "SlidingWindowUBCS"
+        );*/
+
+        DataStream<Tuple3<Integer,String, Map<String,Float>>> estimatedRatesItems = new IncNeighbrCFRec().fit(
+                withKeyedStream,10,"LFU"
+        );
+
+        /*DataStream<Tuple3<Integer,String, Map<String,Float>>> estimatedRatesItems = new IncNeighbrCFRec().fit(
+                withKeyedStream,10,"LRU"
+        );*/
 
         DataStream<Tuple3<Integer,String,ArrayList<String>>> recommendedItems = new IncNeighbrCFRec().recommend(estimatedRatesItems,10);
 
