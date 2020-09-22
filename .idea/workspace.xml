@@ -7,14 +7,175 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8d7aea7-f8ff-43a8-83de-aa37814101df" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/target/classes/TestSparseBinaryMatrix.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Forgetting/LFU_TenRec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Forgetting/LRU_DISGD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Recommender/DISGD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Recommender/TenRec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Recommender/userItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/VectorsOp/VectorOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New$1$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New$1$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New$1$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New$1$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New$1$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New$1$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New$1$8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New$1$9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Matrix/SparseMatrix$LabelerType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Matrix/SparseMatrix.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TestSparseBinaryMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestSparseBinaryMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Matrixo/ST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Matrixo/SparseMatrix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Matrixo/SparseVector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Matrixo/StdIn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Matrixo/StdOut.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/.ipynb_checkpoints/plotting_com_swubsc_normal-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Comparisons_Results/normal_vs_UBSW_WINDOW=1000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Comparisons_Results/result.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Comparisons_Results/results.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Comparisons_Results/time_results.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/LFU/old_structure/100k/recall1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/LFU/old_structure/100k/recall10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/LFU/old_structure/100k/recall2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/LFU/old_structure/100k/recall4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/LFU/old_structure/100k/recall6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/LFU/old_structure/100k/recall8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/LFU/old_structure/100k/resultslfu.rtf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/LRU/old_structure/100k/recall1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/LRU/old_structure/100k/recall10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/LRU/old_structure/100k/recall2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/LRU/old_structure/100k/recall4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/LRU/old_structure/100k/recall6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/LRU/old_structure/100k/recall8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/LRU/old_structure/100k/resultslfu.rtf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/SlidingWindowUBSC_ni_ml100/ForgettingOnlyItemsFromUserItemRatingHistory_window=1000/recall1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/SlidingWindowUBSC_ni_ml100/ForgettingOnlyItemsFromUserItemRatingHistory_window=1000/recall10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/SlidingWindowUBSC_ni_ml100/ForgettingOnlyItemsFromUserItemRatingHistory_window=1000/recall2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/SlidingWindowUBSC_ni_ml100/ForgettingOnlyItemsFromUserItemRatingHistory_window=1000/recall4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/SlidingWindowUBSC_ni_ml100/ForgettingOnlyItemsFromUserItemRatingHistory_window=1000/recall6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/SlidingWindowUBSC_ni_ml100/ForgettingOnlyItemsFromUserItemRatingHistory_window=1000/recall8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/.ipynb_checkpoints/plotting-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/.ipynb_checkpoints/plotting2-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/plotting.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/recall1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/recall10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/recall2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/recall4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/recall6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/recall8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/resultsl.rtf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/sma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/plotting_com_swubsc_normal.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputheidy3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml100.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml1m.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ParallelStreamingRecommenderSystems_jar/ParallelStreamingRecommenderSystems.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ParallelStreamingRecommenderSystems_jar/ParallelStreamingRecommenderSystems.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Evaluation/RecallStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Evaluation/RecallStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Forgetting/Forget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forgetting/Forget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Forgetting/LFU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forgetting/LFU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Forgetting/LFU_New.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forgetting/LFU_New.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Forgetting/LRUForgetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forgetting/LRUForgetting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Forgetting/SlidingWindowUBCS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forgetting/SlidingWindowUBCS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Matrix/DenseMatrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Matrix/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Matrix/MatrixSize.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Matrix/Row.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Matrix/SparseBinaryMatrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Matrix/SparseMatrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PSRS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PSRS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestSparseBinaryMatrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WordWithCount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/GeneratePairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IncrementalNeighbourhood/GeneratePairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IncrementalNeighbourhood/IncrementalCosineSim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalPearsonCorr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IncrementalNeighbourhood/IncrementalPearsonCorr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/partitioning/Batch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Partitioning/Batch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/partitioning/SplittingAndReplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Partitioning/SplittingAndReplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/readingSources/SourceWithTimestamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReadingSources/SourceWithTimestamp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/recommender/DISGD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forgetting/LFU_DISGD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Recommender/IncNeighbrCFRec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Recommender/RecommenderAbstract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Recommender/RecommenderUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/recommender/recommend.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Evaluation/RecallStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Evaluation/RecallStream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LFU.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Matrix/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Matrix/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Matrix/MatrixSize.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Matrix/MatrixSize.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Matrix/Row.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Matrix/Row.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Matrix/SparseBinaryMatrix$LabelerType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Matrix/SparseBinaryMatrix$LabelerType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Matrix/SparseBinaryMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Matrix/SparseBinaryMatrix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PSRS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PSRS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestSparseBinaryMatrix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WordWithCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/incrementalNeighbourhood/GeneratePairs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/incrementalNeighbourhood/GeneratePairs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/incrementalNeighbourhood/IncrementalCosineSim.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/incrementalNeighbourhood/IncrementalCosineSim.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/incrementalNeighbourhood/IncrementalPearsonCorr.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/incrementalNeighbourhood/IncrementalPearsonCorr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/partitioning/Batch$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/partitioning/Batch$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/partitioning/Batch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/partitioning/Batch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/partitioning/SplittingAndReplication$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/partitioning/SplittingAndReplication$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/partitioning/SplittingAndReplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/partitioning/SplittingAndReplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/readingSources/SourceWithTimestamp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/readingSources/SourceWithTimestamp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/RecommenderAbstract.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/RecommenderAbstract.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/recommender/RecommenderUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/RecommenderUtilities.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test$1$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test$1$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test$1$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test$1$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test$1$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xx.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,121 +188,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="IncNeighbrCFRec.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="324" column="5" lean-forward="true" selection-start-line="324" selection-start-column="5" selection-end-line="324" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Forget.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/Forget.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="812">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LRUForgetting.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LRUForgetting.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LRU.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LRU.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RecommenderUtilities.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Recommender/RecommenderUtilities.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="113" column="40" selection-start-line="113" selection-start-column="40" selection-end-line="113" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SparseBinaryMatrix.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/SparseBinaryMatrix.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2010">
-              <caret line="140" column="10" lean-forward="true" selection-start-line="140" selection-start-column="10" selection-end-line="140" selection-end-column="10" />
+            <state relative-caret-position="210">
+              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
               <folding>
-                <element signature="e#1969#1970#0" expanded="true" />
-                <element signature="e#2013#2014#0" expanded="true" />
-                <element signature="e#2217#2218#0" expanded="true" />
-                <element signature="e#2258#2259#0" expanded="true" />
-                <element signature="e#4464#4465#0" expanded="true" />
-                <element signature="e#4529#4530#0" expanded="true" />
-                <element signature="e#6717#6718#0" expanded="true" />
-                <element signature="e#6777#6778#0" expanded="true" />
-                <element signature="e#6829#6830#0" expanded="true" />
-                <element signature="e#6891#6892#0" expanded="true" />
-                <element signature="e#9281#9282#0" expanded="true" />
-                <element signature="e#9332#9333#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#7828#8459#0" expanded="true" />
+                <element signature="e#8458#8459#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PSRS.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PSRS.java">
+      <file leaf-file-name="EvaluationMethods.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Evaluation/EvaluationMethods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="80" column="99" selection-start-line="80" selection-start-column="84" selection-end-line="80" selection-end-column="99" />
+            <state relative-caret-position="1125">
+              <caret line="75" column="62" selection-start-line="75" selection-start-column="62" selection-end-line="75" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecallStream.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Evaluation/RecallStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#644#1103#0" expanded="true" />
+                <element signature="e#1102#1103#0" expanded="true" />
+                <element signature="e#1623#2073#0" expanded="true" />
+                <element signature="e#2072#2073#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestSparseBinaryMatrix.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/TestSparseBinaryMatrix.java">
+      <file leaf-file-name="DecayingFactorUBSC.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/DecayingFactorUBSC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+            <state relative-caret-position="-350">
+              <caret line="20" column="111" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="20" selection-end-column="111" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LFU.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LFU.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3333">
-              <caret line="237" column="75" selection-start-line="237" selection-start-column="75" selection-end-line="237" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#15281#15301#0" expanded="true" />
-                <element signature="e#11951#11960#0" expanded="true" />
-                <element signature="e#12724#12733#0" expanded="true" />
-                <element signature="e#13027#13036#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,28 +249,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>userInHistory</find>
-      <find>itemRate</find>
-      <find>estimatedRateUserItemMap</find>
-      <find>out</find>
-      <find>out.col</find>
-      <find>out.c</find>
-      <find>allItems</find>
-      <find>userItemRatingHistory</find>
-      <find>la</find>
-      <find>content</find>
-      <find>userFootPrint</find>
-      <find>itemFootPrint</find>
-      <find>spar</find>
-      <find>getRowLabels</find>
-      <find>getColumnLabels</find>
-      <find>setC</find>
       <find>No column has the label</find>
-      <find>rated</find>
-      <find>size</find>
       <find>userSimilarities</find>
-      <find>rat</find>
       <find>IncNeighbrCFRec</find>
+      <find>rat</find>
+      <find>setColumnToZero</find>
+      <find>LabelerType</find>
+      <find>length</find>
+      <find>to</find>
+      <find>appendRow</find>
+      <find>size</find>
+      <find>setRow</find>
+      <find>setColumnToOne</find>
+      <find>Row</find>
+      <find>rowLength</find>
+      <find>Row(</find>
+      <find>setR</find>
+      <find>setV</find>
+      <find>setC</find>
+      <find>setValue</find>
+      <find>add</find>
+      <find>containsUser</find>
+      <find>setColumn</find>
+      <find>estimatedRateUserItemMap</find>
+      <find>rated</find>
+      <find>userItemVectors</find>
+      <find>userItem</find>
+      <find>setP</find>
+      <find>ratedItemsByUser</find>
+      <find>flagForInitialization</find>
+      <find>LRU</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -188,32 +287,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/recommender/recommenderAbstract.java" />
-        <option value="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/GeneratePairs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalUserCosineSim.java" />
-        <option value="$PROJECT_DIR$/src/main/java/recommender/recommenderUtilities.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Evaluation/RecallOnline.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Evaluation/EvaluationInc.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Evaluation/RecallStream.java" />
-        <option value="$PROJECT_DIR$/src/main/java/partitioning/Batch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/partitioning/SplittingAndReplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SparseVector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/StdOut.java" />
-        <option value="$PROJECT_DIR$/src/main/java/StdIn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ST.java" />
-        <option value="$PROJECT_DIR$/src/main/java/WordWithCount.java" />
         <option value="$PROJECT_DIR$/src/main/java/SparseMatrix.java" />
-        <option value="$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java" />
         <option value="$PROJECT_DIR$/src/main/java/Matrix/SparseVector.java" />
         <option value="$PROJECT_DIR$/src/main/java/Matrix/StdIn.java" />
         <option value="$PROJECT_DIR$/src/main/java/Matrix/StdOut.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/Matrix/SparseTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Matrix/ST.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Matrix/SparseMatrix.java" />
         <option value="$PROJECT_DIR$/src/main/java/sparsematrix/MatrixSize.java" />
         <option value="$PROJECT_DIR$/src/main/java/Forgetting/SlidingWindowUBCS.java" />
         <option value="$PROJECT_DIR$/src/main/java/sparsematrix/SparseBinaryMatrix.java" />
@@ -225,24 +305,46 @@
         <option value="$PROJECT_DIR$/src/main/java/test2.java" />
         <option value="$PROJECT_DIR$/src/main/java/Forgetting/IncNCF_Forget_by.java" />
         <option value="$PROJECT_DIR$/src/main/java/Forgetting/LRU.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Forgetting/LRUForgetting.java" />
         <option value="$PROJECT_DIR$/src/main/java/Matrix/DenseMatrix.java" />
         <option value="$PROJECT_DIR$/src/main/java/xx.java" />
-        <option value="$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java" />
-        <option value="$PROJECT_DIR$/src/main/java/PSRS.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Matrix/Row.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Matrix/SparseBinaryMatrix.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Forgetting/LFU.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Matrix/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java" />
         <option value="$PROJECT_DIR$/src/main/java/Forgetting/Forget.java" />
         <option value="$PROJECT_DIR$/src/main/java/TestSparseBinaryMatrix.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Matrix/Row.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Matrix/MatrixSize.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Matrix/SparseBinaryMatrix.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Matrix/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Matrix/SparseMatrix.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Forgetting/LFU_New.java" />
+        <option value="$PROJECT_DIR$/src/main/java/VectorsOp/VectorOperations.java" />
+        <option value="$PROJECT_DIR$/src/main/java/recommender/SGD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/recommender/recommend.java" />
+        <option value="$PROJECT_DIR$/src/main/java/recommender/userItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DISGD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java" />
+        <option value="$PROJECT_DIR$/src/main/java/recommender/DISGD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Recommender/IncNeighbrCFRec.java" />
+        <option value="$PROJECT_DIR$/src/main/java/IncrementalMatrixFactorization/SGD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Forgetting/LRUForgetting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Forgetting/LRU_DISGD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Forgetting/LFU.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Recommender/DISGD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TR.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Forgetting/LFU_DISGD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Forgetting/LFU_TenRec.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Recommender/TenRec.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PSRS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Recommender/RecommenderUtilities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Evaluation/RecallStream.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -250,8 +352,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -283,6 +383,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Evaluation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ParallelStreamingRecommenderSystems" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParallelStreamingRecommenderSystems" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Forgetting" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -291,29 +399,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="incrementalNeighbourhood" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ParallelStreamingRecommenderSystems" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ParallelStreamingRecommenderSystems" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Matrix" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ParallelStreamingRecommenderSystems" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ParallelStreamingRecommenderSystems" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="Recommender" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -321,6 +415,11 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="IncrementalMatrixFactorization" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -334,7 +433,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestSparseBinaryMatrix">
+  <component name="RunManager" selected="Application.test">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Matrix.Main" />
       <module name="ParallelStreamingRecommenderSystems" />
@@ -351,17 +450,17 @@
       <module name="ParallelStreamingRecommenderSystems" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="SparseMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Matrixo.SparseMatrix" />
-      <module name="ParallelStreamingRecommenderSystems" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
     <configuration name="TestSparseBinaryMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestSparseBinaryMatrix" />
       <module name="ParallelStreamingRecommenderSystems" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="ParallelStreamingRecommenderSystems" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration name="xx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -408,19 +507,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.SparseMatrix" />
       <item itemvalue="Application.xx" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.PSRS" />
       <item itemvalue="Application.TestSparseBinaryMatrix" />
+      <item itemvalue="Application.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestSparseBinaryMatrix" />
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.TestSparseBinaryMatrix" />
         <item itemvalue="Application.PSRS" />
         <item itemvalue="Application.xx" />
-        <item itemvalue="Application.SparseMatrix" />
       </list>
     </recent_temporary>
   </component>
@@ -448,21 +547,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.48783976" weight="0.32848486" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4356223" weight="0.32848486" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.113018595" side_tool="true" visible="true" weight="0.27030304" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.15593705" side_tool="true" visible="true" weight="0.2581818" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49570817" weight="0.30545455" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.8869814" visible="true" weight="0.27030304" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48426324" weight="0.30545455" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.8440629" visible="true" weight="0.2581818" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.21101573" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.2081545" />
       <window_info id="Structure" order="1" sideWeight="0.5016611" side_tool="true" weight="0.21101573" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -474,7 +574,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49785408" weight="0.32969698" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -486,138 +586,8 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/partitioning/Batch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="29" column="7" selection-start-line="25" selection-start-column="4" selection-end-line="29" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PSRS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/partitioning/SplittingAndReplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="12" column="66" lean-forward="true" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4245">
-          <caret line="302" column="4" selection-start-line="302" selection-start-column="4" selection-end-line="302" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/partitioning/Batch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="29" column="7" selection-start-line="25" selection-start-column="4" selection-end-line="29" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/partitioning/SplittingAndReplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="26" column="81" selection-start-line="26" selection-start-column="81" selection-end-line="26" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PSRS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/GeneratePairs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Evaluation/RecallStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="43" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Evaluation/EvaluationMethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="75" column="62" selection-start-line="75" selection-start-column="62" selection-end-line="75" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/partitioning/Batch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="29" column="7" selection-start-line="25" selection-start-column="4" selection-end-line="29" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/partitioning/SplittingAndReplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StdOut.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/StdIn.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/SparseVector.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ST.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/SparseMatrix.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="30" column="69" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Matrixo/StdIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Matrixo/StdOut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrixo/StdIn.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrixo/StdOut.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/SparseTest.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -626,37 +596,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Matrixo/ST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="243" column="25" selection-start-line="243" selection-start-column="25" selection-end-line="243" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Matrixo/SparseVector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Matrixo/SparseMatrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/MatrixSize.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrixo/ST.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrixo/SparseVector.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrixo/SparseMatrix.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/SlidingWindowUBCS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3777">
@@ -669,24 +611,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/DenseMatrixInc.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/DenseRow.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/DecayingFactorUBSC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="20" column="111" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="20" selection-end-column="111" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalPearsonCorr.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/IncrementalNeighbourhood/IncrementalPearsonCorr.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/IncrementalNeighbourhood/IncrementalCosineSim.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
@@ -698,13 +630,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/test2.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/IncNCF_Forget_by.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/readingSources/SourceWithTimestamp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/DenseMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -716,113 +641,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/MatrixSize.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1305">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/xx.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="90" column="12" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WordWithCount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="113" column="40" selection-start-line="113" selection-start-column="40" selection-end-line="113" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestSparseBinaryMatrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LRU.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LRUForgetting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LFU.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3333">
-          <caret line="237" column="75" selection-start-line="237" selection-start-column="75" selection-end-line="237" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#15281#15301#0" expanded="true" />
-            <element signature="e#11951#11960#0" expanded="true" />
-            <element signature="e#12724#12733#0" expanded="true" />
-            <element signature="e#13027#13036#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/Forget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/Row.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1103">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        <state relative-caret-position="690">
+          <caret line="46" column="23" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2679#2680#0" expanded="true" />
-            <element signature="e#2701#2702#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="191" column="50" lean-forward="true" selection-start-line="191" selection-start-column="8" selection-end-line="191" selection-end-column="50" />
+        <state relative-caret-position="348">
+          <caret line="211" column="27" lean-forward="true" selection-start-line="210" selection-start-column="8" selection-end-line="211" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -831,39 +670,285 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/SparseBinaryMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2010">
-          <caret line="140" column="10" lean-forward="true" selection-start-line="140" selection-start-column="10" selection-end-line="140" selection-end-column="10" />
+        <state relative-caret-position="196">
+          <caret line="321" column="6" lean-forward="true" selection-start-line="319" selection-start-column="5" selection-end-line="321" selection-end-column="6" />
           <folding>
-            <element signature="e#1969#1970#0" expanded="true" />
-            <element signature="e#2013#2014#0" expanded="true" />
-            <element signature="e#2217#2218#0" expanded="true" />
-            <element signature="e#2258#2259#0" expanded="true" />
-            <element signature="e#4464#4465#0" expanded="true" />
-            <element signature="e#4529#4530#0" expanded="true" />
-            <element signature="e#6717#6718#0" expanded="true" />
-            <element signature="e#6777#6778#0" expanded="true" />
-            <element signature="e#6829#6830#0" expanded="true" />
-            <element signature="e#6891#6892#0" expanded="true" />
-            <element signature="e#9281#9282#0" expanded="true" />
-            <element signature="e#9332#9333#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2006#2007#0" expanded="true" />
+            <element signature="e#2050#2051#0" expanded="true" />
+            <element signature="e#2254#2255#0" expanded="true" />
+            <element signature="e#2295#2296#0" expanded="true" />
+            <element signature="e#4501#4502#0" expanded="true" />
+            <element signature="e#4566#4567#0" expanded="true" />
+            <element signature="e#6754#6755#0" expanded="true" />
+            <element signature="e#6814#6815#0" expanded="true" />
+            <element signature="e#6866#6867#0" expanded="true" />
+            <element signature="e#6928#6929#0" expanded="true" />
+            <element signature="e#9262#9263#0" expanded="true" />
+            <element signature="e#9313#9314#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/SparseMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="324" column="5" lean-forward="true" selection-start-line="324" selection-start-column="5" selection-end-line="324" selection-end-column="5" />
+        <state relative-caret-position="-511">
+          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
+            <element signature="e#2182#2183#0" expanded="true" />
+            <element signature="e#2405#2406#0" expanded="true" />
+            <element signature="e#2446#2447#0" expanded="true" />
+            <element signature="e#4703#4704#0" expanded="true" />
+            <element signature="e#4768#4769#0" expanded="true" />
+            <element signature="e#6977#6978#0" expanded="true" />
+            <element signature="e#7037#7038#0" expanded="true" />
+            <element signature="e#7089#7090#0" expanded="true" />
+            <element signature="e#7151#7152#0" expanded="true" />
+            <element signature="e#11099#11100#0" expanded="true" />
+            <element signature="e#11150#11151#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Partitioning/SplittingAndReplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/VectorsOp/VectorOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Recommender/SGD.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/DISGD.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/xx.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/WordWithCount.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestSparseBinaryMatrix.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/recommender/recommend.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/IncrementalMatrixFactorization/SGD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="82" lean-forward="true" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Recommender/RecommenderAbstract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Recommender/userItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LRU.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LRUForgetting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="136" selection-start-line="136" selection-end-line="136" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ReadingSources/SourceWithTimestamp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="60" column="67" selection-start-line="60" selection-start-column="67" selection-end-line="60" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LRU_DISGD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="286" column="27" lean-forward="true" selection-start-line="286" selection-start-column="27" selection-end-line="286" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8190#8199#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LFU_New.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3639">
+          <caret line="277" column="43" lean-forward="true" selection-start-line="277" selection-start-column="43" selection-end-line="277" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LFU.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="53" column="20" lean-forward="true" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Recommender/DISGD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4452">
+          <caret line="43" column="24" selection-start-line="41" selection-end-line="43" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Evaluation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="75" selection-start-line="72" selection-start-column="24" selection-end-line="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6098#6113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PSRS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="80" column="99" selection-start-line="80" selection-start-column="84" selection-end-line="80" selection-end-column="99" />
+        <state relative-caret-position="810">
+          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LFU_TenRec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1622">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4124#4139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Recommender/TenRec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="240" column="65" selection-start-line="240" selection-start-column="65" selection-end-line="240" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LFU_DISGD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2415">
+          <caret line="161" column="51" selection-start-line="161" selection-start-column="51" selection-end-line="161" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/Forget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2504">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Recommender/IncNeighbrCFRec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="332" column="83" selection-start-line="332" selection-start-column="8" selection-end-line="332" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Recommender/RecommenderUtilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7828#8459#0" expanded="true" />
+            <element signature="e#8458#8459#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Evaluation/EvaluationMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="75" column="62" selection-start-line="75" selection-start-column="62" selection-end-line="75" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Evaluation/RecallStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="e#644#1103#0" expanded="true" />
+            <element signature="e#1102#1103#0" expanded="true" />
+            <element signature="e#1623#2073#0" expanded="true" />
+            <element signature="e#2072#2073#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/DecayingFactorUBSC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-350">
+          <caret line="20" column="111" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="20" selection-end-column="111" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

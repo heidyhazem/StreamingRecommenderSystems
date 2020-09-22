@@ -1,7 +1,7 @@
 package Forgetting;
 
-import incrementalNeighbourhood.GeneratePairs;
-import incrementalNeighbourhood.IncrementalCosineSim;
+import IncrementalNeighbourhood.GeneratePairs;
+import IncrementalNeighbourhood.IncrementalCosineSim;
 import org.apache.flink.api.common.state.MapState;
 import org.apache.flink.api.common.state.MapStateDescriptor;
 import org.apache.flink.api.common.state.ValueState;
@@ -15,9 +15,8 @@ import org.apache.flink.api.java.tuple.Tuple4;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.functions.KeyedProcessFunction;
 import org.apache.flink.table.shaded.org.joda.time.DateTime;
-import org.apache.flink.table.shaded.org.joda.time.Days;
 import org.apache.flink.util.Collector;
-import recommender.RecommenderUtilities;
+import Recommender.RecommenderUtilities;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -116,8 +115,8 @@ public class LRUForgetting
 
 
 
-        Map<String,Float> output2 = new HashMap<>();
-        output2.put("hhh",99999999f);
+        //Map<String,Float> output2 = new HashMap<>();
+        //output2.put("hhh",99999999f);
 
         //out.collect(Tuple3.of(777777777,"Heidy",output2));
 

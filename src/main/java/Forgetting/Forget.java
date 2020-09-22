@@ -1,9 +1,7 @@
 package Forgetting;
 
-import Matrix.SparseBinaryMatrix;
-import com.sun.org.apache.xpath.internal.operations.Bool;
-import incrementalNeighbourhood.GeneratePairs;
-import incrementalNeighbourhood.IncrementalCosineSim;
+import IncrementalNeighbourhood.GeneratePairs;
+import IncrementalNeighbourhood.IncrementalCosineSim;
 import org.apache.flink.api.common.state.MapState;
 import org.apache.flink.api.common.state.MapStateDescriptor;
 import org.apache.flink.api.common.state.ValueState;
@@ -17,13 +15,9 @@ import org.apache.flink.api.java.tuple.Tuple4;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.functions.KeyedProcessFunction;
-import org.apache.flink.table.shaded.org.joda.time.DateTime;
-import org.apache.flink.table.shaded.org.joda.time.Days;
 import org.apache.flink.util.Collector;
-import recommender.RecommenderUtilities;
-import scala.tools.nsc.doc.model.Public;
+import Recommender.RecommenderUtilities;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;

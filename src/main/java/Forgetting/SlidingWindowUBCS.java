@@ -1,10 +1,9 @@
 package Forgetting;
 
-import incrementalNeighbourhood.GeneratePairs;
-import incrementalNeighbourhood.IncrementalCosineSim;
+import IncrementalNeighbourhood.GeneratePairs;
+import IncrementalNeighbourhood.IncrementalCosineSim;
 import org.apache.flink.api.common.state.MapState;
 import org.apache.flink.api.common.state.MapStateDescriptor;
-import org.apache.flink.api.common.time.Time;
 import org.apache.flink.api.common.typeinfo.TypeHint;
 import org.apache.flink.api.common.typeinfo.TypeInformation;
 import org.apache.flink.api.java.tuple.Tuple;
@@ -15,14 +14,10 @@ import org.apache.flink.calcite.shaded.com.google.common.collect.Iterables;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.functions.windowing.ProcessWindowFunction;
-import org.apache.flink.streaming.api.windowing.assigners.SlidingEventTimeWindows;
 import org.apache.flink.streaming.api.windowing.triggers.CountTrigger;
-import org.apache.flink.streaming.api.windowing.triggers.Trigger;
-import org.apache.flink.streaming.api.windowing.triggers.TriggerResult;
 import org.apache.flink.streaming.api.windowing.windows.GlobalWindow;
-import org.apache.flink.streaming.api.windowing.windows.TimeWindow;
 import org.apache.flink.util.Collector;
-import recommender.*;
+import Recommender.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
