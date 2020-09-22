@@ -25,19 +25,11 @@ import static sun.java2d.xr.XRUtils.None;
 
 /**
  represents collaborative filtering recommender based on user's Neighbourhood with binary rating
+ cosine similarity metric
  */
 public class IncNeighbrCFRec extends RecommenderAbstract {
 
-    private DataStream<Tuple4<Integer, String, String, Float>> withKeyStream;
 
-    /**
-     * Constructs the input KeyedStream
-     *
-     * @param withKeyStream the input KeyedStream
-     */
-    public void IncNeighbrCFRec(DataStream<Tuple4<Integer, String, String, Float>> withKeyStream) {
-        withKeyStream = this.withKeyStream;
-    }
 
 
     @Override
@@ -84,7 +76,6 @@ public class IncNeighbrCFRec extends RecommenderAbstract {
                                 //get the ordered pairOf users(key)
                                 Tuple3<String,String,Integer>  keyWithPosition = new GeneratePairs().getKey(user,userInHistory);
                                 Tuple2<String,String> userPair = Tuple2.of(keyWithPosition.f0,keyWithPosition.f1);
-                                //Integer positionOfCurrentUserInTheTuple = keyWithPosition.f2;
 
                                 try{
 
@@ -256,7 +247,7 @@ public class IncNeighbrCFRec extends RecommenderAbstract {
                     public void open(Configuration config) {
 
 
-                        MapStateDescriptor<Tuple2<String, String>, Tuple4<Integer, Integer,Integer,Float>> descriptor2 =
+                        MapStateDescriptor<Tuple2<String, String>, Tuple4<Integer, Integer,Integer,Float>> descriptor1 =
                                 new MapStateDescriptor<>(
                                         "UserUserSimilarities",
                                         TypeInformation.of(new TypeHint<Tuple2<String, String>>() {
@@ -267,7 +258,7 @@ public class IncNeighbrCFRec extends RecommenderAbstract {
                                         })
                                 );
 
-                        MapStateDescriptor<String, Integer> descriptor3 =
+                        MapStateDescriptor<String, Integer> descriptor2 =
                                 new MapStateDescriptor<>(
                                         "allItems",
                                         TypeInformation.of(new TypeHint<String>() {
@@ -278,7 +269,7 @@ public class IncNeighbrCFRec extends RecommenderAbstract {
                                         })
                                 );
 
-                        MapStateDescriptor<String, Map<String, Float>> descriptor4 =
+                        MapStateDescriptor<String, Map<String, Float>> descriptor3 =
                                 new MapStateDescriptor<>(
                                         "userItemRatingHistory",
                                         TypeInformation.of(new TypeHint<String>() {
@@ -289,9 +280,9 @@ public class IncNeighbrCFRec extends RecommenderAbstract {
                                         })
                                 );
 
-                        userItemRatingHistory = getRuntimeContext().getMapState(descriptor4);
-                        userSimilarities = getRuntimeContext().getMapState(descriptor2);
-                        allItems = getRuntimeContext().getMapState(descriptor3);
+                        userItemRatingHistory = getRuntimeContext().getMapState(descriptor3);
+                        userSimilarities = getRuntimeContext().getMapState(descriptor1);
+                        allItems = getRuntimeContext().getMapState(descriptor2);
                     }
 
                 });
@@ -309,7 +300,7 @@ public class IncNeighbrCFRec extends RecommenderAbstract {
             return new SlidingWindowUBCS().fit(withKeyStream,k,1000,1);
         }
         else if(forgettingTechnique.equals("LFU")){
-            return new Forget().fit(withKeyStream,k,"LFU");
+            return new LFU_UBCS().fit(withKeyStream,k,"LFU");
             //return new LFU().fit(withKeyStream,k);
             //return new LFU_New().fit(withKeyStream,k);
         }

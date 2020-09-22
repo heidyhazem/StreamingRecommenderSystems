@@ -173,17 +173,6 @@ public class TenRec extends RecommenderAbstract {
 
                         MapStateDescriptor<Tuple2<String, String>, Float> descriptor1 =
                                 new MapStateDescriptor<>(
-                                        "userItemRatingHistory",
-                                        TypeInformation.of(new TypeHint<Tuple2<String, String>>() {
-
-                                        }),
-                                        TypeInformation.of(new TypeHint<Float>() {
-
-                                        })
-                                );
-
-                        MapStateDescriptor<Tuple2<String, String>, Float> descriptor2 =
-                                new MapStateDescriptor<>(
                                         "PairItemsCorating",
                                         TypeInformation.of(new TypeHint<Tuple2<String, String>>() {
 
@@ -193,7 +182,7 @@ public class TenRec extends RecommenderAbstract {
                                         })
                                 );
 
-                        MapStateDescriptor<String, Long> descriptor3 =
+                        MapStateDescriptor<String, Long> descriptor2 =
                                 new MapStateDescriptor<>(
                                         "itemCount",
                                         TypeInformation.of(new TypeHint<String>() {
@@ -204,7 +193,7 @@ public class TenRec extends RecommenderAbstract {
                                         })
                                 );
 
-                        MapStateDescriptor<String, Map<String, Float>> descriptor4 =
+                        MapStateDescriptor<String, Map<String, Float>> descriptor3 =
                                 new MapStateDescriptor<>(
                                         "userItemRatingHistory",
                                         TypeInformation.of(new TypeHint<String>() {
@@ -215,14 +204,10 @@ public class TenRec extends RecommenderAbstract {
                                         })
                                 );
 
-                        userItemRatingHistory = getRuntimeContext().getMapState(descriptor4);
-                        pairItemCoRating = getRuntimeContext().getMapState(descriptor2);
-                        itemCount = getRuntimeContext().getMapState(descriptor3);
-
+                        userItemRatingHistory = getRuntimeContext().getMapState(descriptor3);
+                        pairItemCoRating = getRuntimeContext().getMapState(descriptor1);
+                        itemCount = getRuntimeContext().getMapState(descriptor2);
                     }
-
-
-
                 });
 
         return itemsScores;

@@ -7,176 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8d7aea7-f8ff-43a8-83de-aa37814101df" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Forgetting/LFU_TenRec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Forgetting/LRU_DISGD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Recommender/DISGD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Recommender/TenRec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Recommender/userItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/VectorsOp/VectorOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$9.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New$1$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New$1$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New$1$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New$1$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New$1$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New$1$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New$1$7.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New$1$8.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New$1$9.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU_New.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Matrix/SparseMatrix$LabelerType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Matrix/SparseMatrix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/.ipynb_checkpoints/plotting_com_swubsc_normal-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Comparisons_Results/normal_vs_UBSW_WINDOW=1000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Comparisons_Results/result.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Comparisons_Results/results.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Comparisons_Results/time_results.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/LFU/old_structure/100k/recall1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/LFU/old_structure/100k/recall10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/LFU/old_structure/100k/recall2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/LFU/old_structure/100k/recall4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/LFU/old_structure/100k/recall6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/LFU/old_structure/100k/recall8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/LFU/old_structure/100k/resultslfu.rtf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/LRU/old_structure/100k/recall1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/LRU/old_structure/100k/recall10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/LRU/old_structure/100k/recall2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/LRU/old_structure/100k/recall4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/LRU/old_structure/100k/recall6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/LRU/old_structure/100k/recall8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/LRU/old_structure/100k/resultslfu.rtf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/SlidingWindowUBSC_ni_ml100/ForgettingOnlyItemsFromUserItemRatingHistory_window=1000/recall1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/SlidingWindowUBSC_ni_ml100/ForgettingOnlyItemsFromUserItemRatingHistory_window=1000/recall10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/SlidingWindowUBSC_ni_ml100/ForgettingOnlyItemsFromUserItemRatingHistory_window=1000/recall2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/SlidingWindowUBSC_ni_ml100/ForgettingOnlyItemsFromUserItemRatingHistory_window=1000/recall4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/SlidingWindowUBSC_ni_ml100/ForgettingOnlyItemsFromUserItemRatingHistory_window=1000/recall6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/SlidingWindowUBSC_ni_ml100/ForgettingOnlyItemsFromUserItemRatingHistory_window=1000/recall8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/.ipynb_checkpoints/plotting-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/.ipynb_checkpoints/plotting2-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/plotting.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/recall1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/recall10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/recall2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/recall4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/recall6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/recall8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/resultsl.rtf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/original/changing_ni_ml100/sma.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/plotting_com_swubsc_normal.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inputheidy3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml100.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml1m.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ParallelStreamingRecommenderSystems_jar/ParallelStreamingRecommenderSystems.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ParallelStreamingRecommenderSystems_jar/ParallelStreamingRecommenderSystems.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Evaluation/RecallStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Evaluation/RecallStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Forgetting/DecayingFactorUBSC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Forgetting/Forget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forgetting/Forget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Forgetting/LFU.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Forgetting/LFU_New.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Forgetting/LRUForgetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forgetting/LRUForgetting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Forgetting/SlidingWindowUBCS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forgetting/SlidingWindowUBCS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Matrix/DenseMatrix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Matrix/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Matrix/MatrixSize.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Matrix/Row.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Matrix/SparseBinaryMatrix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Matrix/SparseMatrix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PSRS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PSRS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TestSparseBinaryMatrix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WordWithCount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/GeneratePairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IncrementalNeighbourhood/GeneratePairs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalCosineSim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IncrementalNeighbourhood/IncrementalCosineSim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/incrementalNeighbourhood/IncrementalPearsonCorr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IncrementalNeighbourhood/IncrementalPearsonCorr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/partitioning/Batch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Partitioning/Batch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/partitioning/SplittingAndReplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Partitioning/SplittingAndReplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/readingSources/SourceWithTimestamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReadingSources/SourceWithTimestamp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recommender/DISGD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forgetting/LFU_DISGD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recommender/IncNeighbrCFRec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Recommender/IncNeighbrCFRec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recommender/RecommenderAbstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Recommender/RecommenderAbstract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recommender/RecommenderUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Recommender/RecommenderUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/recommender/recommend.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xx.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Evaluation/RecallStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Evaluation/RecallStream.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/Forget.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/Forget.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LFU.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LFU.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/LRUForgetting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Forgetting/SlidingWindowUBCS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Matrix/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Matrix/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Matrix/MatrixSize.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Matrix/MatrixSize.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Matrix/Row.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Matrix/Row.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Matrix/SparseBinaryMatrix$LabelerType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Matrix/SparseBinaryMatrix$LabelerType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Matrix/SparseBinaryMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Matrix/SparseBinaryMatrix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PSRS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PSRS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestSparseBinaryMatrix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WordWithCount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/incrementalNeighbourhood/GeneratePairs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/incrementalNeighbourhood/GeneratePairs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/incrementalNeighbourhood/IncrementalCosineSim.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/incrementalNeighbourhood/IncrementalCosineSim.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/incrementalNeighbourhood/IncrementalPearsonCorr.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/incrementalNeighbourhood/IncrementalPearsonCorr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/partitioning/Batch$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/partitioning/Batch$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/partitioning/Batch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/partitioning/Batch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/partitioning/SplittingAndReplication$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/partitioning/SplittingAndReplication$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/partitioning/SplittingAndReplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/partitioning/SplittingAndReplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/readingSources/SourceWithTimestamp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/readingSources/SourceWithTimestamp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/IncNeighbrCFRec.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/recommender/RecommenderAbstract.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/RecommenderAbstract.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/recommender/RecommenderUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/recommender/RecommenderUtilities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test$1$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test$1$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test$1$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test$1$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test$1$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xx.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Forgetting/Forget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forgetting/LFU_UBCS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Forgetting/data/ML10M.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Forgetting/data/ml100.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Forgetting/data/ml1m.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Recommender/IncNeighbrCFRec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Recommender/IncNeighbrCFRec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Recommender/TenRec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Recommender/TenRec.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -188,7 +24,44 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="LRUForgetting.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LRUForgetting.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1202">
+              <caret line="136" selection-start-line="136" selection-end-line="136" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SlidingWindowUBCS.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/SlidingWindowUBCS.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4635">
+              <caret line="309" column="26" selection-start-line="309" selection-start-column="26" selection-end-line="309" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TenRec.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Recommender/TenRec.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="241" lean-forward="true" selection-start-line="241" selection-end-line="241" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -284,10 +157,10 @@
         <option value="$PROJECT_DIR$/src/main/java/TR.java" />
         <option value="$PROJECT_DIR$/src/main/java/Forgetting/LFU_DISGD.java" />
         <option value="$PROJECT_DIR$/src/main/java/Forgetting/LFU_TenRec.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Recommender/TenRec.java" />
         <option value="$PROJECT_DIR$/src/main/java/PSRS.java" />
         <option value="$PROJECT_DIR$/src/main/java/Recommender/RecommenderUtilities.java" />
         <option value="$PROJECT_DIR$/src/main/java/Evaluation/RecallStream.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Recommender/TenRec.java" />
       </list>
     </option>
   </component>
@@ -313,6 +186,35 @@
               <item name="ParallelStreamingRecommenderSystems" type="b2602c69:ProjectViewProjectNode" />
               <item name="ParallelStreamingRecommenderSystems" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ParallelStreamingRecommenderSystems" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParallelStreamingRecommenderSystems" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ParallelStreamingRecommenderSystems" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParallelStreamingRecommenderSystems" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ParallelStreamingRecommenderSystems" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParallelStreamingRecommenderSystems" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Forgetting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ParallelStreamingRecommenderSystems" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParallelStreamingRecommenderSystems" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Recommender" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -460,6 +362,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -467,14 +370,15 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.15593705" side_tool="true" visible="true" weight="0.2678788" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5028612" side_tool="true" visible="true" weight="0.32969698" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48426324" weight="0.30545455" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.8440629" visible="true" weight="0.2678788" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.8440629" weight="0.2678788" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.2081545" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.2081545" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49713877" visible="true" weight="0.32969698" />
       <window_info id="Structure" order="1" sideWeight="0.5016611" side_tool="true" weight="0.21101573" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -486,7 +390,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49785408" weight="0.32969698" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -693,7 +596,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/Forget.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LFU_UBCS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2293">
           <caret line="174" selection-start-line="174" selection-end-line="174" />
@@ -753,26 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LRUForgetting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="136" selection-start-line="136" selection-end-line="136" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/SlidingWindowUBCS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2637">
-          <caret line="309" column="26" selection-start-line="309" selection-start-column="26" selection-end-line="309" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/IncrementalMatrixFactorization/SGD.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -824,16 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Recommender/TenRec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="240" column="65" selection-start-line="240" selection-start-column="65" selection-end-line="240" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Recommender/userItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -869,6 +742,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
           <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/LRUForgetting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1202">
+          <caret line="136" selection-start-line="136" selection-end-line="136" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Forgetting/SlidingWindowUBCS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4635">
+          <caret line="309" column="26" selection-start-line="309" selection-start-column="26" selection-end-line="309" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Recommender/TenRec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="241" lean-forward="true" selection-start-line="241" selection-end-line="241" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

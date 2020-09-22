@@ -24,16 +24,6 @@ import IncrementalMatrixFactorization.*;
 
 public class DISGD extends RecommenderAbstract{
 
-    private DataStream<Tuple4<Integer, String, String, Float>> withKeyStream;
-
-    /**
-     * Constructs the input KeyedStream
-     *
-     * @param withKeyStream the input KeyedStream
-     */
-    public void IncNeighbrCFRec(DataStream<Tuple4<Integer, String, String, Float>> withKeyStream) {
-        withKeyStream = this.withKeyStream;
-    }
 
 
     @Override
@@ -50,12 +40,12 @@ public class DISGD extends RecommenderAbstract{
                     MapState<String, ArrayList<String>> ratedItemsByUser;
                     ValueState<Integer> flagForInitialization;
 
-                    int latentFeatures = 10;
+                    //int latentFeatures = 10;
                     Double lambda = 0.01;
                     Double mu = 0.05;
 
                     //number of recommended items
-                    Integer N = 10;
+                    //Integer N = 10;
 
                     @Override
                     public void processElement(Tuple4<Integer, String, String, Float> input, Context context, Collector<Tuple3<Integer, String, Map<String, Float>>> out) throws Exception {
@@ -272,7 +262,6 @@ public class DISGD extends RecommenderAbstract{
                         //************************************************************************************************************
                         //*******************************2-Score the recommendation list given the true observed item i***************
                         //send the maps to take the average then recommend and score
-                        //context.output(scoreMapOutput, Tuple4.of(input.f0, user, item, itemsScoresMatrixMap));
 
                         out.collect(Tuple3.of(user,item,itemsScoresMatrixMap));
 
@@ -294,7 +283,7 @@ public class DISGD extends RecommenderAbstract{
                     @Override
                     public void open(Configuration config) {
 
-                        MapStateDescriptor<String, Double[]> descriptor2 =
+                        MapStateDescriptor<String, Double[]> descriptor1 =
                                 new MapStateDescriptor<>(
                                         "itemMatrixDescriptor",
                                         TypeInformation.of(new TypeHint<String>() {
@@ -303,7 +292,7 @@ public class DISGD extends RecommenderAbstract{
                                         })
                                 );
 
-                        MapStateDescriptor<String, Double[]> descriptor22 =
+                        MapStateDescriptor<String, Double[]> descriptor2 =
                                 new MapStateDescriptor<>(
                                         "usersMatrix",
                                         TypeInformation.of(new TypeHint<String>() {
@@ -328,8 +317,8 @@ public class DISGD extends RecommenderAbstract{
                                         0
                                 );
 
-                        itemsMatrix = getRuntimeContext().getMapState(descriptor2);
-                        usersMatrix = getRuntimeContext().getMapState(descriptor22);
+                        itemsMatrix = getRuntimeContext().getMapState(descriptor1);
+                        usersMatrix = getRuntimeContext().getMapState(descriptor2);
                         ratedItemsByUser = getRuntimeContext().getMapState(descriptor3);
                         flagForInitialization = getRuntimeContext().getState(descriptor4);
                     }

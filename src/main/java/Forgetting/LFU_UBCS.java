@@ -24,7 +24,7 @@ import java.util.Map;
 
 import static sun.java2d.xr.XRUtils.None;
 
-public class Forget{
+public class LFU_UBCS {
     public DataStream<Tuple3<Integer,String, Map<String, Float>>> fit(DataStream<Tuple4<Integer, String, String, Float>> withKeyStream, Integer k, String forgettingWay){
 
         DataStream<Tuple3<Integer,String, Map<String, Float>>> estimatedRateUserItemMap = withKeyStream.keyBy(0)
